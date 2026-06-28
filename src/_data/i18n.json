@@ -18,5 +18,11 @@
       "en": "All rights (im)morally reserved."
     }
   },
-  "langSwitchLabel": { "it": "EN", "en": "IT" }
+  "langSwitchLabel": { "it": "EN", "en": "IT" },
+  "meta": {
+    "defaultDescription": {
+      "it": "Francesco D'Amplo, detto Ciccio Damplo: chef siciliano, imprenditore del lusso culinario, fondatore della catena Damplo.",
+      "en": "Francesco D'Amplo, known as Ciccio Damplo: Sicilian chef, culinary luxury entrepreneur, founder of the Damplo restaurant chain."
+    }
+  }
 }
