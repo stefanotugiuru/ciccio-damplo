@@ -1,0 +1,23 @@
+---
+pagination:
+  data: site.langs
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}/piatti/index.html"
+layout: layouts/base.njk
+hreflangIt: "/it/piatti/"
+hreflangEn: "/en/piatti/"
+eleventyComputed:
+  title: "{% if lang == 'it' %}Piatti{% else %}Dishes{% endif %}"
+  langSwitchUrl: "{% if lang == 'it' %}/en/piatti/{% else %}/it/piatti/{% endif %}"
+---
+<h1>{% if lang == "it" %}Piatti Iconici{% else %}Iconic Dishes{% endif %}</h1>
+<div class="card-grid">
+  {% for piatto in piatti %}
+  <a class="card" href="/{{ lang }}/piatti/{{ piatto.slug }}/">
+    <h2>{{ piatto.nome }}</h2>
+    <p class="card-tagline">{{ piatto.sottotitoloIronico[lang] }}</p>
+    <p>{{ piatto.prezzoAssurdo[lang] }}</p>
+  </a>
+  {% endfor %}
+</div>
