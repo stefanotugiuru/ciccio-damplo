@@ -13,9 +13,9 @@ eleventyComputed:
   langSwitchUrl: "{% if item.lang == 'it' %}/en/press/{{ item.slug }}/{% else %}/it/press/{{ item.slug }}/{% endif %}"
 ---
 <article>
-  <p class="masthead">{{ item.testata }} — {{ item.data }}</p>
+  <p class="masthead">{{ item.testata }} — {{ item.data | formatDate(item.lang) }}</p>
   <h1>{{ item.titolo[item.lang] }}</h1>
-  <img src="/assets/img/press/{{ item.slug }}.jpg" alt="{{ item.titolo[item.lang] }}">
+  <img class="press-cover" src="/assets/img/press/{{ item.slug }}.jpg" alt="{% if item.lang == 'it' %}Copertina di {{ item.testata }}{% else %}Cover image of {{ item.testata }}{% endif %}">
   {% for paragraph in item.corpo[item.lang] %}
   <p>{{ paragraph }}</p>
   {% endfor %}

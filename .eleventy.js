@@ -5,6 +5,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("ristorantePerSlug", (slug) =>
     ristoranti.find((r) => r.slug === slug)
   );
+  eleventyConfig.addFilter("formatDate", (isoDate, lang) => {
+    const locale = lang === "it" ? "it-IT" : "en-US";
+    return new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(new Date(isoDate));
+  });
 
   return {
     dir: {
