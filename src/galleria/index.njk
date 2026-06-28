@@ -15,7 +15,7 @@ eleventyComputed:
 <div class="gallery-grid">
   {% for foto in galleria %}
   <figure>
-    <img src="{{ foto.file }}" alt="{{ foto.caption[lang] }}" loading="lazy">
+    <img src="{{ foto.file }}" alt="{{ foto.alt[lang] }}"{% if loop.index > 3 %} loading="lazy"{% endif %}>
     <figcaption>{{ foto.caption[lang] }}</figcaption>
   </figure>
   {% endfor %}
