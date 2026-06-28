@@ -1,0 +1,23 @@
+---
+pagination:
+  data: site.langs
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}/ristoranti/index.html"
+layout: layouts/base.njk
+hreflangIt: "/it/ristoranti/"
+hreflangEn: "/en/ristoranti/"
+eleventyComputed:
+  title: "{% if lang == 'it' %}Ristoranti{% else %}Restaurants{% endif %}"
+  langSwitchUrl: "{% if lang == 'it' %}/en/ristoranti/{% else %}/it/ristoranti/{% endif %}"
+---
+<h1>{% if lang == "it" %}I Ristoranti Damplo{% else %}The Damplo Restaurants{% endif %}</h1>
+<div class="card-grid">
+  {% for ristorante in ristoranti %}
+  <a class="card" href="/{{ lang }}/ristoranti/{{ ristorante.slug }}/">
+    <h2>{{ ristorante.nome }}</h2>
+    <p>{{ ristorante.citta[lang] }}</p>
+    <p class="pull-quote">{{ ristorante.tagline[lang] }}</p>
+  </a>
+  {% endfor %}
+</div>
