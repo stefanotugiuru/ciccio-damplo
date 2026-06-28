@@ -170,3 +170,27 @@ a:hover {
   opacity: 0.75;
   font-size: 0.9rem;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.gallery-grid figure {
+  margin: 0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-grid figcaption {
+  padding-top: var(--space-sm);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

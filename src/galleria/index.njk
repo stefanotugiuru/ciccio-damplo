@@ -1,0 +1,22 @@
+---
+pagination:
+  data: site.langs
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}/galleria/index.html"
+layout: layouts/base.njk
+hreflangIt: "/it/galleria/"
+hreflangEn: "/en/galleria/"
+eleventyComputed:
+  title: "{% if lang == 'it' %}Galleria{% else %}Gallery{% endif %}"
+  langSwitchUrl: "{% if lang == 'it' %}/en/galleria/{% else %}/it/galleria/{% endif %}"
+---
+<h1>{% if lang == "it" %}Galleria{% else %}Gallery{% endif %}</h1>
+<div class="gallery-grid">
+  {% for foto in galleria %}
+  <figure>
+    <img src="{{ foto.file }}" alt="{{ foto.caption[lang] }}" loading="lazy">
+    <figcaption>{{ foto.caption[lang] }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>
