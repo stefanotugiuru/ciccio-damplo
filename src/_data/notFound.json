@@ -1,0 +1,12 @@
+{
+  "it": {
+    "title": "404 — Piatto Non Disponibile",
+    "message": "Questo piatto non è nel menu. Forse Ciccio l'ha deconstruito così tanto che è scomparso del tutto. Torna alla Home e prova qualcosa che esiste davvero.",
+    "cta": "Torna alla Home"
+  },
+  "en": {
+    "title": "404 — Dish Not Available",
+    "message": "This dish isn't on the menu. Maybe Ciccio deconstructed it so much it disappeared entirely. Head back to the Home page and try something that actually exists.",
+    "cta": "Back to Home"
+  }
+}

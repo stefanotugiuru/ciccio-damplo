@@ -1,0 +1,15 @@
+---
+pagination:
+  data: site.langs
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}/404/index.html"
+layout: layouts/base.njk
+title: "404"
+hreflangIt: "/it/404/"
+hreflangEn: "/en/404/"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  langSwitchUrl: "{% if lang == 'it' %}/en/404/{% else %}/it/404/{% endif %}"
+---
+{% include "partials/notfound-body.njk" %}

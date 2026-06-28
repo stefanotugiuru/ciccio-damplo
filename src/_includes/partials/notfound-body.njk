@@ -1,0 +1,6 @@
+{% set lang = lang or site.defaultLang %}
+<section class="not-found">
+  <h1>{{ notFound[lang].title }}</h1>
+  <p>{{ notFound[lang].message }}</p>
+  <p><a href="/{{ lang }}/">{{ notFound[lang].cta }}</a></p>
+</section>
