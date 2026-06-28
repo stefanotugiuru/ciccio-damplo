@@ -153,3 +153,20 @@ a:hover {
   margin: var(--space-md) 0;
   border: 1px solid rgba(201, 162, 39, 0.3);
 }
+
+.awards-list {
+  list-style: none;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.awards-list li {
+  border-bottom: 1px solid rgba(201, 162, 39, 0.25);
+  padding: var(--space-sm) 0;
+}
+
+.awards-ente {
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
