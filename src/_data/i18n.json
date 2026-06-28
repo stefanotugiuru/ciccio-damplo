@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": { "it": "Home", "en": "Home" },
+    "biografia": { "it": "Biografia", "en": "Biography" },
+    "ristoranti": { "it": "Ristoranti", "en": "Restaurants" },
+    "premi": { "it": "Premi", "en": "Awards" },
+    "piatti": { "it": "Piatti", "en": "Dishes" },
+    "press": { "it": "Press", "en": "Press" },
+    "galleria": { "it": "Galleria", "en": "Gallery" }
+  },
+  "footer": {
+    "disclaimer": {
+      "it": "Questo è un sito web fittizio e satirico, creato per scopi di intrattenimento con il consenso di Francesco.",
+      "en": "This is a fictional satirical website created for entertainment purposes with Francesco's consent."
+    },
+    "rights": {
+      "it": "Tutti i diritti (im)moralmente riservati.",
+      "en": "All rights (im)morally reserved."
+    }
+  },
+  "langSwitchLabel": { "it": "EN", "en": "IT" }
+}
