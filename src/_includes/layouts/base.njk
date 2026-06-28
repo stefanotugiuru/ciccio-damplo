@@ -15,7 +15,7 @@
   <meta property="og:title" content="{{ title }} — Ciccio Damplo">
   <meta property="og:description" content="{{ description or i18n.meta.defaultDescription[lang] }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.baseUrl }}{{ canonical or ('/' + lang + '/') }}">
+  <meta property="og:url" content="{{ site.baseUrl }}{{ canonical or (hreflangIt if lang == 'it' else hreflangEn) or ('/' + lang + '/') }}">
   <meta property="og:image" content="{{ site.baseUrl }}{{ ogImage or '/assets/img/ciccio/og-default.jpg' }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }} — Ciccio Damplo">
