@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} — Ciccio Damplo</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" hreflang="it" href="{{ site.baseUrl }}{{ hreflangIt or '/it/' }}">
+  <link rel="alternate" hreflang="en" href="{{ site.baseUrl }}{{ hreflangEn or '/en/' }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.baseUrl }}{{ hreflangIt or '/it/' }}">
+</head>
+<body>
+  {% include "partials/nav.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>
