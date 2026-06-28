@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "node tests/check-data.js && node tests/check-links.js && eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
