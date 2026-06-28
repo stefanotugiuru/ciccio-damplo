@@ -17,7 +17,7 @@ eleventyComputed:
   <a class="card" href="/{{ lang }}/ristoranti/{{ ristorante.slug }}/">
     <h2>{{ ristorante.nome }}</h2>
     <p>{{ ristorante.citta[lang] }}</p>
-    <p class="pull-quote">{{ ristorante.tagline[lang] }}</p>
+    <p class="card-tagline">{{ ristorante.tagline[lang] }}</p>
   </a>
   {% endfor %}
 </div>

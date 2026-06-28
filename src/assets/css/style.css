@@ -128,3 +128,10 @@ a:hover {
   padding-left: var(--space-md);
   margin: var(--space-lg) 0;
 }
+
+.card-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-gold-bright);
+  margin: var(--space-sm) 0 0;
+}
