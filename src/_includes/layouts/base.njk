@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  {% if canonical %}
+  <link rel="canonical" href="{{ site.baseUrl }}{{ canonical }}">
+  {% endif %}
   <link rel="alternate" hreflang="it" href="{{ site.baseUrl }}{{ hreflangIt or '/it/' }}">
   <link rel="alternate" hreflang="en" href="{{ site.baseUrl }}{{ hreflangEn or '/en/' }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.baseUrl }}{{ hreflangIt or '/it/' }}">

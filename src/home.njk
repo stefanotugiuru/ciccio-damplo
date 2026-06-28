@@ -1,7 +1,10 @@
 ---
+pagination:
+  data: site.langs
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}/index.html"
 layout: layouts/base.njk
 title: "Ciccio Damplo"
-lang: it
-canonical: "/it/"
 ---
 {% include "partials/home-body.njk" %}
