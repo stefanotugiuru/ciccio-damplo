@@ -11,8 +11,8 @@
     <li><a href="/{{ lang }}/galleria/">{{ i18n.nav.galleria[lang] }}</a></li>
   </ul>
   {% if lang == "it" %}
-    <a class="lang-switch" href="/en/">{{ i18n.langSwitchLabel.it }}</a>
+    <a class="lang-switch" href="{{ langSwitchUrl or '/en/' }}">{{ i18n.langSwitchLabel.it }}</a>
   {% else %}
-    <a class="lang-switch" href="/it/">{{ i18n.langSwitchLabel.en }}</a>
+    <a class="lang-switch" href="{{ langSwitchUrl or '/it/' }}">{{ i18n.langSwitchLabel.en }}</a>
   {% endif %}
 </nav>
