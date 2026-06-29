@@ -23,12 +23,14 @@ export default async function RistorantiPage({
         </h1>
       </RevealOnScroll>
       <BentoGrid>
-        {ristoranti.map((ristorante) => (
-          <Card key={ristorante.slug} href={`/ristoranti/${ristorante.slug}`}>
-            <h2 className="font-display text-xl text-gold-bright">{ristorante.nome}</h2>
-            <p className="mt-1 text-sm text-cream/70">{ristorante.citta[locale]}</p>
-            <p className="mt-4 font-display italic text-cream/90">{ristorante.tagline[locale]}</p>
-          </Card>
+        {ristoranti.map((ristorante, index) => (
+          <RevealOnScroll key={ristorante.slug} delay={Math.min(index, 2) * 0.1}>
+            <Card href={`/ristoranti/${ristorante.slug}`}>
+              <h2 className="font-display text-xl text-gold-bright">{ristorante.nome}</h2>
+              <p className="mt-1 text-sm text-cream/70">{ristorante.citta[locale]}</p>
+              <p className="mt-4 font-display italic text-cream/90">{ristorante.tagline[locale]}</p>
+            </Card>
+          </RevealOnScroll>
         ))}
       </BentoGrid>
     </div>
