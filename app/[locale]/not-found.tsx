@@ -3,10 +3,12 @@
 import { useParams } from "next/navigation";
 import { notFound } from "@/content/notFound";
 import { Link } from "@/i18n/navigation";
+import { isLocale } from "@/i18n/routing";
 
 export default function NotFound() {
   const params = useParams();
-  const locale = params.locale === "en" ? "en" : "it";
+  const rawLocale = params.locale;
+  const locale = typeof rawLocale === "string" && isLocale(rawLocale) ? rawLocale : "it";
   const content = notFound[locale];
 
   return (
