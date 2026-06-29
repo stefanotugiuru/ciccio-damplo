@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
-import { routing } from "@/i18n/routing";
+import { routing, isLocale } from "@/i18n/routing";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "../globals.css";
@@ -37,7 +37,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!routing.locales.includes(locale as "it" | "en")) {
+  if (!isLocale(locale)) {
     notFound();
   }
   setRequestLocale(locale);

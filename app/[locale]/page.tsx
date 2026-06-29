@@ -1,6 +1,8 @@
 import { home } from "@/content/home";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import PillButton from "@/components/PillButton";
+import { isLocale } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 
 export default async function HomePage({
   params,
@@ -8,7 +10,10 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const content = home[locale as "it" | "en"];
+  if (!isLocale(locale)) {
+    notFound();
+  }
+  const content = home[locale];
 
   return (
     <div>
