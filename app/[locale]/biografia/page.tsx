@@ -22,7 +22,7 @@ export default async function BiografiaPage({
         </h1>
       </RevealOnScroll>
       {content.paragraphs.map((paragraph, index) => (
-        <RevealOnScroll key={index} delay={index * 0.1}>
+        <RevealOnScroll key={index} delay={Math.min(index, 2) * 0.1}>
           <p className="mt-6 text-lg text-cream/90">{paragraph}</p>
         </RevealOnScroll>
       ))}
