@@ -28,7 +28,7 @@ export default function Nav() {
         <Link href="/" className="font-display text-sm uppercase tracking-[0.15em] text-gold-bright">
           Ciccio Damplo
         </Link>
-        <ul className="hidden items-center gap-5 text-sm md:flex">
+        <ul className="hidden items-center gap-4 text-sm md:flex md:max-w-[60vw] md:overflow-x-auto">
           <li><Link href="/biografia">{t("biografia")}</Link></li>
           {SECTIONS.map((section) => (
             <li key={section}><Link href={`/${section}`}>{t(section)}</Link></li>
@@ -44,6 +44,8 @@ export default function Nav() {
         <button
           type="button"
           aria-label="Menu"
+          aria-expanded={open}
+          aria-controls="mobile-menu"
           className="relative h-5 w-6 md:hidden"
           onClick={() => setOpen((value) => !value)}
         >
@@ -59,6 +61,9 @@ export default function Nav() {
         </button>
       </nav>
       <div
+        id="mobile-menu"
+        aria-hidden={!open}
+        inert={!open}
         className={`fixed inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-black/80 backdrop-blur-3xl transition-opacity duration-500 md:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
