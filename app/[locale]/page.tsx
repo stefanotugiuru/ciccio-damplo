@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
-import { home, homePressQuotes, homeGalleriaTeaser } from "@/content/home";
+import { home, homeGalleriaTeaser } from "@/content/home";
 import { ristoranti } from "@/content/ristoranti";
 import { piatti } from "@/content/piatti";
 import { premi } from "@/content/premi";
+import { quotes } from "@/content/quoteCarousel";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import PillButton from "@/components/PillButton";
+import QuoteCarousel from "@/components/QuoteCarousel";
 import { buildMetadata } from "@/lib/metadata";
 import { BASE_PATH } from "@/lib/basePath";
 
@@ -200,25 +202,9 @@ export default async function HomePage({
       {/* ── 5. PRESS QUOTES ─────────────────────────────────────────── */}
       <section className="border-y border-white/10 px-6 py-24 md:px-8">
         <RevealOnScroll>
-          <p className="mb-16 text-center text-xs uppercase tracking-[0.2em] text-gold">
-            {t.pressLabel}
-          </p>
+          <p className="mb-12 text-center text-xs uppercase tracking-[0.2em] text-gold">{t.pressLabel}</p>
         </RevealOnScroll>
-
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 md:grid-cols-3">
-          {homePressQuotes.map((q, index) => (
-            <RevealOnScroll key={index} delay={index * 0.1}>
-              <a href={`${BASE_PATH}/${locale}/press/`} className="group block">
-                <blockquote className="font-display text-xl italic leading-relaxed text-cream/90 transition-colors group-hover:text-gold-bright">
-                  {q[locale]}
-                </blockquote>
-                <p className="mt-4 text-xs uppercase tracking-[0.15em] text-gold/70">
-                  — {q.testata}
-                </p>
-              </a>
-            </RevealOnScroll>
-          ))}
-        </div>
+        <QuoteCarousel quotes={quotes[locale]} locale={locale} />
       </section>
 
       {/* ── 6. GALLERIA TEASER ──────────────────────────────────────── */}
