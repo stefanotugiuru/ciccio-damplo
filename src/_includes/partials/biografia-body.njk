@@ -1,7 +1,0 @@
-{% set lang = lang or site.defaultLang %}
-<article class="biografia">
-  <h1>{{ biografia[lang].title }}</h1>
-  {% for paragraph in biografia[lang].paragraphs %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
-</article>

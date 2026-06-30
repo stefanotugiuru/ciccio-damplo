@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "biografia": "Biography",
+    "ristoranti": "Restaurants",
+    "premi": "Awards",
+    "piatti": "Dishes",
+    "press": "Press",
+    "galleria": "Gallery",
+    "langSwitch": "IT"
+  },
+  "footer": {
+    "disclaimer": "This is a fictional satirical website created for entertainment purposes with Francesco's consent.",
+    "rights": "All rights (im)morally reserved."
+  },
+  "meta": {
+    "defaultDescription": "Francesco D'Amplo, known as Ciccio Damplo: Sicilian chef, culinary luxury entrepreneur, founder of the Damplo restaurant chain."
+  }
+}

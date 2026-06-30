@@ -1,12 +1,27 @@
 {
   "name": "ciccio-damplo-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
-    "dev": "eleventy --serve",
-    "build": "node tests/check-data.js && node tests/check-links.js && eleventy"
+    "dev": "next dev",
+    "build": "tsx scripts/check-links.ts && next build && node scripts/copy-root-files.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
+    "motion": "^11.15.0",
+    "next": "^15.1.0",
+    "next-intl": "^3.26.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.22.4",
+    "typescript": "^5.7.0"
   }
 }
