@@ -5,6 +5,7 @@ import { biografia } from "@/content/biografia";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import PillButton from "@/components/PillButton";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -37,7 +38,7 @@ export default async function BiografiaPage({
       <section
         className="relative flex min-h-[60dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: "url('/images/galleria/ciccio-che-prepara-piatti.png')",
+          backgroundImage: `url('${BASE_PATH}/images/galleria/ciccio-che-prepara-piatti.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center top",
         }}
@@ -104,7 +105,7 @@ export default async function BiografiaPage({
               <div className="sticky top-36 space-y-4">
                 <div className="overflow-hidden rounded-bezel border border-white/10">
                   <img
-                    src="/images/galleria/ciccio-masterchef.png"
+                    src={`${BASE_PATH}/images/galleria/ciccio-masterchef.png`}
                     alt={locale === "it" ? "Ciccio a MasterChef" : "Ciccio at MasterChef"}
                     className="w-full object-cover"
                     loading="lazy"
@@ -112,7 +113,7 @@ export default async function BiografiaPage({
                 </div>
                 <div className="overflow-hidden rounded-bezel border border-white/10">
                   <img
-                    src="/images/galleria/ciccio-nella-cantina-damplo.png"
+                    src={`${BASE_PATH}/images/galleria/ciccio-nella-cantina-damplo.png`}
                     alt={locale === "it" ? "Ciccio nella cantina" : "Ciccio in the wine cellar"}
                     className="w-full object-cover"
                     loading="lazy"

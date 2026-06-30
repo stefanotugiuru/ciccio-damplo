@@ -4,6 +4,7 @@ import { isLocale } from "@/i18n/routing";
 import { ristoranti } from "@/content/ristoranti";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -51,13 +52,13 @@ export default async function RistorantiPage({
         {ristoranti.map((ristorante, index) => (
           <RevealOnScroll key={ristorante.slug} delay={Math.min(index, 2) * 0.08}>
             <a
-              href={`/${locale}/ristoranti/${ristorante.slug}/`}
+              href={`${BASE_PATH}/${locale}/ristoranti/${ristorante.slug}/`}
               className={`group relative block overflow-hidden rounded-bezel ${
                 index === 0 ? "md:col-span-2 aspect-[16/7]" : "aspect-[4/3]"
               }`}
             >
               <img
-                src={`/images/ristoranti/${ristorante.slug}-hero.jpg`}
+                src={`${BASE_PATH}/images/ristoranti/${ristorante.slug}-hero.jpg`}
                 alt={ristorante.nome}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading={index === 0 ? undefined : "lazy"}

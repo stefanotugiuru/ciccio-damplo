@@ -4,6 +4,7 @@ import { isLocale } from "@/i18n/routing";
 import { press } from "@/content/press";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -53,7 +54,7 @@ export default async function PressDetailPage({
       <section
         className="relative flex min-h-[50dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('/images/press/${articolo.slug}.jpg')`,
+          backgroundImage: `url('${BASE_PATH}/images/press/${articolo.slug}.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -101,12 +102,12 @@ export default async function PressDetailPage({
             {altriArticoli.map((a, index) => (
               <RevealOnScroll key={a.slug} delay={index * 0.07}>
                 <a
-                  href={`/${locale}/press/${a.slug}/`}
+                  href={`${BASE_PATH}/${locale}/press/${a.slug}/`}
                   className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 transition-colors hover:border-gold/30"
                 >
                   <div className="relative aspect-video overflow-hidden">
                     <img
-                      src={`/images/press/${a.slug}.jpg`}
+                      src={`${BASE_PATH}/images/press/${a.slug}.jpg`}
                       alt={a.testata}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"

@@ -6,6 +6,7 @@ import { getRistoranteBySlug } from "@/lib/ristorante-lookup";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import PillButton from "@/components/PillButton";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -50,7 +51,7 @@ export default async function PiattoDetailPage({
       <section
         className="relative flex min-h-[60dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('/images/piatti/${piatto.slug}.jpg')`,
+          backgroundImage: `url('${BASE_PATH}/images/piatti/${piatto.slug}.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -86,7 +87,7 @@ export default async function PiattoDetailPage({
                 <p className="mt-8 text-cream/70">
                   {locale === "it" ? "Disponibile esclusivamente presso " : "Available exclusively at "}
                   <a
-                    href={`/${locale}/ristoranti/${ristorante.slug}/`}
+                    href={`${BASE_PATH}/${locale}/ristoranti/${ristorante.slug}/`}
                     className="text-gold underline underline-offset-4 hover:text-gold-bright"
                   >
                     {ristorante.nome}
@@ -149,12 +150,12 @@ export default async function PiattoDetailPage({
               {altriPiatti.map((p, index) => (
                 <RevealOnScroll key={p.slug} delay={index * 0.07}>
                   <a
-                    href={`/${locale}/piatti/${p.slug}/`}
+                    href={`${BASE_PATH}/${locale}/piatti/${p.slug}/`}
                     className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 transition-colors hover:border-gold/30"
                   >
                     <div className="relative aspect-video overflow-hidden">
                       <img
-                        src={`/images/piatti/${p.slug}.jpg`}
+                        src={`${BASE_PATH}/images/piatti/${p.slug}.jpg`}
                         alt={p.nome}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"

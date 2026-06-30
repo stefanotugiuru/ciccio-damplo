@@ -8,6 +8,7 @@ import { premi } from "@/content/premi";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import PillButton from "@/components/PillButton";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -37,7 +38,7 @@ export default async function HomePage({
       <section
         className="relative flex min-h-[88dvh] flex-col items-start justify-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: "url('/images/ciccio/ciccio-cucina.jpg')",
+          backgroundImage: `url('${BASE_PATH}/images/ciccio/ciccio-cucina.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center top",
         }}
@@ -92,7 +93,7 @@ export default async function HomePage({
         <RevealOnScroll delay={0.15}>
           <div className="overflow-hidden rounded-bezel border border-white/10">
             <img
-              src="/images/galleria/ciccio-che-prepara-piatti.png"
+              src={`${BASE_PATH}/images/galleria/ciccio-che-prepara-piatti.png`}
               alt={locale === "it" ? "Ciccio che prepara i piatti" : "Ciccio preparing dishes"}
               className="h-96 w-full object-cover"
               loading="lazy"
@@ -125,11 +126,11 @@ export default async function HomePage({
           {ristorantiHome.map((r, index) => (
             <RevealOnScroll key={r.slug} delay={Math.min(index, 2) * 0.08}>
               <a
-                href={`/${locale}/ristoranti/${r.slug}/`}
+                href={`${BASE_PATH}/${locale}/ristoranti/${r.slug}/`}
                 className="group relative block aspect-[4/3] overflow-hidden rounded-bezel"
               >
                 <img
-                  src={`/images/ristoranti/${r.slug}-hero.jpg`}
+                  src={`${BASE_PATH}/images/ristoranti/${r.slug}-hero.jpg`}
                   alt={r.nome}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
@@ -172,12 +173,12 @@ export default async function HomePage({
           {piatti.map((p, index) => (
             <RevealOnScroll key={p.slug} delay={Math.min(index, 2) * 0.08}>
               <a
-                href={`/${locale}/piatti/${p.slug}/`}
+                href={`${BASE_PATH}/${locale}/piatti/${p.slug}/`}
                 className="group block overflow-hidden rounded-bezel border border-white/10 bg-white/5 transition-colors duration-500 hover:border-gold/30"
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <img
-                    src={`/images/piatti/${p.slug}.jpg`}
+                    src={`${BASE_PATH}/images/piatti/${p.slug}.jpg`}
                     alt={p.nome}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
@@ -210,7 +211,7 @@ export default async function HomePage({
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 md:grid-cols-3">
           {homePressQuotes.map((q, index) => (
             <RevealOnScroll key={index} delay={index * 0.1}>
-              <a href={`/${locale}/press/`} className="group block">
+              <a href={`${BASE_PATH}/${locale}/press/`} className="group block">
                 <blockquote className="font-display text-xl italic leading-relaxed text-cream/90 transition-colors group-hover:text-gold-bright">
                   {q[locale]}
                 </blockquote>
@@ -241,11 +242,11 @@ export default async function HomePage({
           {homeGalleriaTeaser.map((foto, index) => (
             <RevealOnScroll key={foto.file} delay={Math.min(index, 3) * 0.07}>
               <a
-                href={`/${locale}/galleria/`}
+                href={`${BASE_PATH}/${locale}/galleria/`}
                 className="group relative block aspect-square overflow-hidden rounded-[1.5rem] border border-white/10 transition-colors duration-500 hover:border-gold/40"
               >
                 <img
-                  src={foto.file}
+                  src={`${BASE_PATH}${foto.file}`}
                   alt={foto.alt[locale]}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
@@ -272,7 +273,7 @@ export default async function HomePage({
           {premi.slice(0, 6).map((premio, index) => (
             <RevealOnScroll key={premio.nome.it} delay={Math.min(index, 3) * 0.06}>
               <a
-                href={`/${locale}/premi/`}
+                href={`${BASE_PATH}/${locale}/premi/`}
                 className="block rounded-full border border-gold/20 bg-white/5 px-5 py-2.5 text-sm text-cream/70 transition-colors duration-300 hover:border-gold/50 hover:text-cream"
               >
                 <span className="text-gold/60">★</span>{" "}

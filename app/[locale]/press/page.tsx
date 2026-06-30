@@ -4,6 +4,7 @@ import { isLocale } from "@/i18n/routing";
 import { press } from "@/content/press";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -47,7 +48,7 @@ export default async function PressPage({
         {press.map((articolo, index) => (
           <RevealOnScroll key={articolo.slug} delay={Math.min(index, 2) * 0.08}>
             <a
-              href={`/${locale}/press/${articolo.slug}/`}
+              href={`${BASE_PATH}/${locale}/press/${articolo.slug}/`}
               className={`group block overflow-hidden rounded-bezel border border-white/10 bg-white/5 transition-colors duration-500 hover:border-gold/30 ${
                 index === 0 ? "md:col-span-2" : ""
               }`}
@@ -59,7 +60,7 @@ export default async function PressPage({
                 }`}
               >
                 <img
-                  src={`/images/press/${articolo.slug}.jpg`}
+                  src={`${BASE_PATH}/images/press/${articolo.slug}.jpg`}
                   alt={articolo.testata}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading={index === 0 ? undefined : "lazy"}

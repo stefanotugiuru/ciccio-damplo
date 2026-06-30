@@ -4,6 +4,7 @@ import { isLocale } from "@/i18n/routing";
 import { galleria } from "@/content/galleria";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
+import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -54,7 +55,7 @@ export default async function GalleriaPage({
           <RevealOnScroll key={foto.file} delay={Math.min(index * 0.03, 0.3)}>
             <figure className="mb-4 break-inside-avoid overflow-hidden rounded-[1.25rem] border border-white/10 bg-white/5">
               <img
-                src={foto.file}
+                src={`${BASE_PATH}${foto.file}`}
                 alt={foto.alt[locale]}
                 loading={index < 8 ? undefined : "lazy"}
                 className="w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
