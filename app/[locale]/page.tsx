@@ -115,8 +115,14 @@ export default async function HomePage({
           </div>
         </RevealOnScroll>
 
+        {(() => {
+          const order = ["damplo-mineo", "damplo-melbourne", "damplo-dubai", "damplo-new-york"];
+          const ristorantiHome = order
+            .map((slug) => ristoranti.find((r) => r.slug === slug))
+            .filter(Boolean) as typeof ristoranti;
+          return (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {ristoranti.map((r, index) => (
+          {ristorantiHome.map((r, index) => (
             <RevealOnScroll key={r.slug} delay={Math.min(index, 2) * 0.08}>
               <a
                 href={`/${locale}/ristoranti/${r.slug}/`}
@@ -144,6 +150,8 @@ export default async function HomePage({
             </RevealOnScroll>
           ))}
         </div>
+          );
+        })()}
       </section>
 
       {/* ── 4. PIATTI ───────────────────────────────────────────────── */}

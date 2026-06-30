@@ -76,4 +76,21 @@ export const piatti: Piatto[] = [
     },
     ristoranteOrigine: "damplo-new-york",
   },
+  {
+    slug: "polipo-alla-damplo-experience",
+    nome: "Polipo alla Damplo Experience con Terra di Macadamia",
+    sottotitoloIronico: {
+      it: "L'Oceano Pacifico, ridotto a un concetto.",
+      en: "The Pacific Ocean, reduced to a concept.",
+    },
+    descrizione: {
+      it: `Polipo siciliano — importato da Ciccio stesso via corriere refrigerato da Mineo — scottato su pietra lavica dell'Etna e adagiato su una crema di macadamia tostata, omaggio al territorio australiano. Il tentacolo viene disposto in forma di spirale, perché Ciccio ritiene che "il polipo meriti dignità anche nella morte". Servito con olio extravergine della vigna privata di Mineo e un pizzico di sale marino di Trapani macinato sul momento da un assistente dedicato esclusivamente a questa operazione. Il piatto richiede quattro giorni di preparazione. Il cliente lo consuma in dodici minuti. Ciccio non lo sa ancora.`,
+      en: `Sicilian octopus — personally imported by Ciccio via refrigerated courier from Mineo — seared on Etna lava stone and rested on a roasted macadamia cream, a tribute to the Australian territory. The tentacle is arranged in a spiral, because Ciccio believes "the octopus deserves dignity even in death." Served with extra virgin olive oil from the private Mineo vineyard and a pinch of Trapani sea salt ground tableside by an assistant dedicated exclusively to this operation. The dish requires four days of preparation. The guest consumes it in twelve minutes. Ciccio doesn't know yet.`,
+    },
+    prezzoAssurdo: {
+      it: "€ 195 — il corriere refrigerato non è incluso",
+      en: "€195 — refrigerated courier not included",
+    },
+    ristoranteOrigine: "damplo-melbourne",
+  },
 ];
