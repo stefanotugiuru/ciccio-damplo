@@ -123,6 +123,24 @@ export default async function RistoranteDetailPage({
           </RevealOnScroll>
         </div>
 
+        {/* ── Foto aggiuntive ── */}
+        {ristorante.galleria && ristorante.galleria.length > 0 && (
+          <RevealOnScroll>
+            <section className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2">
+              {ristorante.galleria.map((img, i) => (
+                <div key={i} className="overflow-hidden rounded-bezel border border-white/10">
+                  <img
+                    src={img}
+                    alt={ristorante.nome}
+                    className="w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </section>
+          </RevealOnScroll>
+        )}
+
         {/* ── Piatti del ristorante ── */}
         {piattiDelRistorante.length > 0 && (
           <RevealOnScroll>

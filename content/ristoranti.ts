@@ -5,6 +5,7 @@ export type Ristorante = {
   tagline: { it: string; en: string };
   descrizione: { it: string; en: string };
   stelleMichelinFinte: number;
+  galleria?: string[];
 };
 
 export const ristoranti: Ristorante[] = [
@@ -21,6 +22,7 @@ export const ristoranti: Ristorante[] = [
       en: `The mother restaurant. Here, in 2015, Ciccio invented the "surprise emotional menu": the price of a dish varies depending on how much the guest seems to appreciate it while making eye contact — a system he calls "empathic pricing" and accountants call "a problem." The dining room is lined with Etna lava stone and emerald velvet, with original 18th-century vaulted ceilings restored by a Palermo architect paid in Pasta alla Norma Riserva Privata. Panoramic views over the Catania plain, a cellar stocked with wines from the Mineo vineyard, and a soundtrack of tammurriata remixed into lounge. The Michelin star hangs at the entrance in a gold frame. The real one.`,
     },
     stelleMichelinFinte: 3,
+    galleria: ["/images/ristoranti/gallery/damplo-mineo-sala-interna.png"],
   },
   {
     slug: "damplo-dubai",
@@ -35,6 +37,10 @@ export const ristoranti: Ristorante[] = [
       en: `On the top floor of a tower Ciccio describes as "taller than my self-esteem, and that's saying something," Damplo Dubai is the meeting point between Gulf luxury and the most uncompromising Sicilian tradition. The arancino is served on a Carrara marble pedestal with its own dedicated spotlight and an illustrated technical card. The wine list is printed entirely in gold lettering — even the page listing the water. There is no written dress code, but "anything that shines is the bare minimum." Tables are reserved six months in advance, except the chef's table: that one can't be reserved.`,
     },
     stelleMichelinFinte: 4,
+    galleria: [
+      "/images/ristoranti/gallery/damplo-dubai-interno.png",
+      "/images/ristoranti/gallery/damplo-dubai-interno-2.png",
+    ],
   },
   {
     slug: "damplo-monaco",
