@@ -54,7 +54,7 @@ export default async function RistorantiPage({
             <a
               href={`${BASE_PATH}/${locale}/ristoranti/${ristorante.slug}/`}
               className={`group relative block overflow-hidden rounded-bezel ${
-                index === 0 ? "md:col-span-2 aspect-[16/7]" : "aspect-[4/3]"
+                index === 0 ? "md:col-span-2 aspect-[4/3] md:aspect-[16/7]" : "aspect-[4/3]"
               }`}
             >
               <img

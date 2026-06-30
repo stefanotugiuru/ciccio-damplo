@@ -59,7 +59,7 @@ export default async function PiattiPage({
             >
               <div
                 className={`relative overflow-hidden ${
-                  index === 0 ? "aspect-[21/9]" : "aspect-video"
+                  index === 0 ? "aspect-video md:aspect-[21/9]" : "aspect-video"
                 }`}
               >
                 <img

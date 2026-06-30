@@ -24,7 +24,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="fixed inset-x-0 top-6 z-40 mx-auto flex w-max items-center gap-6 rounded-full border border-white/10 bg-black/40 px-6 py-3 backdrop-blur-2xl">
+      <nav className="fixed inset-x-4 top-4 z-40 mx-auto flex w-auto max-w-fit items-center gap-4 rounded-full border border-white/10 bg-black/40 px-5 py-3 backdrop-blur-2xl sm:inset-x-0 sm:top-6 sm:gap-6 sm:px-6">
         <Link href="/" className="font-display text-sm uppercase tracking-[0.15em] text-gold-bright">
           Ciccio Damplo
         </Link>
@@ -46,9 +46,10 @@ export default function Nav() {
           aria-label="Menu"
           aria-expanded={open}
           aria-controls="mobile-menu"
-          className="relative h-5 w-6 md:hidden"
+          className="relative flex h-11 w-11 cursor-pointer items-center justify-center md:hidden"
           onClick={() => setOpen((value) => !value)}
         >
+          <span className="relative h-5 w-6">
           <span
             className={`absolute left-0 top-0 h-px w-6 bg-cream transition-transform duration-500 ${open ? "translate-y-2.5 rotate-45" : ""}`}
           />
@@ -58,6 +59,7 @@ export default function Nav() {
           <span
             className={`absolute left-0 top-5 h-px w-6 bg-cream transition-transform duration-500 ${open ? "-translate-y-2.5 -rotate-45" : ""}`}
           />
+          </span>
         </button>
       </nav>
       <div

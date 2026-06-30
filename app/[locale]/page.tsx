@@ -54,7 +54,7 @@ export default async function HomePage({
             <p className="mb-4 text-xs uppercase tracking-[0.2em] text-gold">
               {t.stats}
             </p>
-            <h1 className="font-display text-5xl uppercase tracking-wide text-gold-bright md:text-7xl">
+            <h1 className="font-display text-4xl uppercase tracking-wide text-gold-bright sm:text-5xl md:text-7xl">
               {t.heading}
             </h1>
             <p className="mt-5 max-w-xl text-xl text-cream/90 md:text-2xl">
@@ -181,7 +181,7 @@ export default async function HomePage({
                     src={`${BASE_PATH}/images/piatti/${p.slug}.jpg`}
                     alt={p.nome}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
+                    loading={index < 2 ? undefined : "lazy"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>

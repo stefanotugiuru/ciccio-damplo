@@ -71,7 +71,7 @@ export default function Footer() {
                 <a
                   key={r.slug}
                   href={`${BASE_PATH}/${locale}/ristoranti/${r.slug}/`}
-                  className="group flex flex-col"
+                  className="group flex min-h-[44px] flex-col justify-center py-1"
                 >
                   <span className="text-sm text-cream/80 transition-colors group-hover:text-gold-bright">
                     {r.nome}
@@ -89,7 +89,7 @@ export default function Footer() {
               <p className="mb-5 text-xs uppercase tracking-[0.2em] text-gold">
                 {isIt ? "Scopri" : "Explore"}
               </p>
-              <ul className="space-y-2.5">
+              <ul className="space-y-0.5">
                 {[
                   { href: `${BASE_PATH}/${locale}/biografia/`,  label: isIt ? "Biografia" : "Biography" },
                   { href: `${BASE_PATH}/${locale}/piatti/`,     label: isIt ? "I Piatti" : "Dishes" },
@@ -100,7 +100,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-sm text-cream/70 transition-colors hover:text-gold-bright"
+                      className="flex min-h-[44px] items-center text-sm text-cream/70 transition-colors hover:text-gold-bright"
                     >
                       {link.label}
                     </a>
