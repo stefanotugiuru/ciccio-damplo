@@ -39,25 +39,13 @@ export default function Footer() {
                 ? "Lusso culinario siciliano. Quattro stelle Michelin, dieci ristoranti, cinque continenti."
                 : "Sicilian culinary luxury. Four Michelin stars, ten restaurants, five continents."}
             </p>
-            {/* Social */}
-            <div className="mt-6 flex gap-4">
-              <a
-                href="https://www.instagram.com/ciccio_damplo_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs uppercase tracking-[0.1em] text-cream/50 hover:text-gold transition-colors"
-              >
-                Instagram
-              </a>
-              <span className="text-cream/20">·</span>
-              <a
-                href="https://www.facebook.com/ciccio.damplo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs uppercase tracking-[0.1em] text-cream/50 hover:text-gold transition-colors"
-              >
-                Facebook
-              </a>
+            {/* Logo */}
+            <div className="mt-6">
+              <img
+                src={`${BASE_PATH}/images/damplo-logo.png`}
+                alt="Damplo Group"
+                className="h-16 w-auto opacity-90"
+              />
             </div>
           </div>
 

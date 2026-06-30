@@ -58,7 +58,7 @@ export default async function GalleriaPage({
                 src={`${BASE_PATH}${foto.file}`}
                 alt={foto.alt[locale]}
                 loading={index < 8 ? undefined : "lazy"}
-                className="w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+                className="w-full object-cover"
               />
               <figcaption className="px-3 py-2.5 text-xs leading-relaxed text-cream/70">
                 {foto.caption[locale]}
