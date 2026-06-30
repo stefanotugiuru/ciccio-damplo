@@ -170,7 +170,7 @@ export default async function HomePage({
         </RevealOnScroll>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {piatti.map((p, index) => (
+          {piatti.slice(0, 4).map((p, index) => (
             <RevealOnScroll key={p.slug} delay={Math.min(index, 2) * 0.08}>
               <a
                 href={`${BASE_PATH}/${locale}/piatti/${p.slug}/`}
