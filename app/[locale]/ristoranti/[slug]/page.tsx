@@ -78,20 +78,18 @@ export default async function RistoranteDetailPage({
 
       {/* ── Contenuto principale ── */}
       <div className="mx-auto max-w-6xl px-6 py-20 md:px-8">
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
 
           {/* Testo */}
-          <RevealOnScroll>
-            <div className="md:col-span-7">
-              <p className="text-xl leading-relaxed text-cream/90">
-                {ristorante.descrizione[locale]}
-              </p>
-            </div>
+          <RevealOnScroll className="md:col-span-7">
+            <p className="text-xl leading-relaxed text-cream/90">
+              {ristorante.descrizione[locale]}
+            </p>
           </RevealOnScroll>
 
           {/* Stelle & info laterale */}
-          <RevealOnScroll delay={0.15}>
-            <aside className="space-y-4 rounded-bezel border border-gold/20 bg-white/5 p-6 md:col-span-5 md:space-y-6 md:p-8">
+          <RevealOnScroll delay={0.15} className="md:col-span-5">
+            <aside className="space-y-4 rounded-bezel border border-gold/20 bg-white/5 p-6 md:space-y-6 md:p-8">
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gold/70">
                   {locale === "it" ? "Stelle Michelin" : "Michelin Stars"}
