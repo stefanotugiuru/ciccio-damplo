@@ -1,9 +1,26 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { piatti } from "@/content/piatti";
 import { getRistoranteBySlug } from "@/lib/ristorante-lookup";
 import { Link } from "@/i18n/navigation";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) return {};
+  const piatto = piatti.find((item) => item.slug === slug);
+  return buildMetadata({
+    locale,
+    path: `/piatti/${slug}`,
+    title: piatto ? `${piatto.nome} — Ciccio Damplo` : "Ciccio Damplo",
+  });
+}
 
 export function generateStaticParams() {
   return piatti.map((piatto) => ({ slug: piatto.slug }));

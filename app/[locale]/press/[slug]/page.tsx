@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { press } from "@/content/press";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) return {};
+  const articolo = press.find((item) => item.slug === slug);
+  return buildMetadata({
+    locale,
+    path: `/press/${slug}`,
+    title: articolo ? `${articolo.titolo[locale]} — Ciccio Damplo` : "Ciccio Damplo",
+  });
+}
 
 export function generateStaticParams() {
   return press.map((articolo) => ({ slug: articolo.slug }));

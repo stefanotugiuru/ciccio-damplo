@@ -1,8 +1,20 @@
+import type { Metadata } from "next";
 import { home } from "@/content/home";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import PillButton from "@/components/PillButton";
 import { isLocale } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return buildMetadata({ locale, path: "", title: "Ciccio Damplo" });
+}
 
 export default async function HomePage({
   params,

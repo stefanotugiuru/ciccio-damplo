@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { galleria } from "@/content/galleria";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return buildMetadata({
+    locale,
+    path: "/galleria",
+    title: locale === "it" ? "Galleria — Ciccio Damplo" : "Gallery — Ciccio Damplo",
+  });
+}
 
 export default async function GalleriaPage({
   params,

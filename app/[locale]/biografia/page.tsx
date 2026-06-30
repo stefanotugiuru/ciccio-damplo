@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { biografia } from "@/content/biografia";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return buildMetadata({
+    locale,
+    path: "/biografia",
+    title: locale === "it" ? "Biografia — Ciccio Damplo" : "Biography — Ciccio Damplo",
+  });
+}
 
 export default async function BiografiaPage({
   params,

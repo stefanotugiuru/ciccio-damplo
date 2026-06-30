@@ -1,8 +1,25 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { ristoranti } from "@/content/ristoranti";
 import { getRistoranteBySlug } from "@/lib/ristorante-lookup";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) return {};
+  const ristorante = getRistoranteBySlug(slug);
+  return buildMetadata({
+    locale,
+    path: `/ristoranti/${slug}`,
+    title: ristorante ? `${ristorante.nome} — Ciccio Damplo` : "Ciccio Damplo",
+  });
+}
 
 export function generateStaticParams() {
   return ristoranti.map((ristorante) => ({ slug: ristorante.slug }));
