@@ -66,11 +66,8 @@ export default async function RistorantiPage({
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
 
               {/* Badge stelle */}
-              <div className="absolute right-5 top-5 rounded-full border border-gold/50 bg-black/60 px-4 py-1.5 text-xs text-gold backdrop-blur-sm">
-                {"★".repeat(ristorante.stelleMichelinFinte)}{" "}
-                <span className="text-gold/60">
-                  ({ristorante.stelleMichelinFinte} {locale === "it" ? "stelle" : "stars"})
-                </span>
+              <div className="absolute right-4 top-4 rounded-full border border-gold/50 bg-black/60 px-3 py-1 text-xs text-gold backdrop-blur-sm">
+                {"★".repeat(ristorante.stelleMichelinFinte)}
               </div>
 
               <div className="absolute bottom-0 left-0 p-7">
@@ -85,7 +82,7 @@ export default async function RistorantiPage({
                 <p className="mt-3 max-w-md font-display text-sm italic text-cream/80">
                   {ristorante.tagline[locale]}
                 </p>
-                <p className="mt-4 inline-block text-xs uppercase tracking-[0.15em] text-gold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="mt-4 inline-block text-xs uppercase tracking-[0.15em] text-gold/80">
                   {locale === "it" ? "Scopri →" : "Explore →"}
                 </p>
               </div>

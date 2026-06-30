@@ -44,7 +44,8 @@ export default async function RistoranteDetailPage({
   }
 
   const piattiDelRistorante = piatti.filter((p) => p.ristoranteOrigine === ristorante.slug);
-  const altriRistoranti = ristoranti.filter((r) => r.slug !== ristorante.slug);
+  // Mostra max 3 altri ristoranti per non appesantire la pagina
+  const altriRistoranti = ristoranti.filter((r) => r.slug !== ristorante.slug).slice(0, 3);
 
   return (
     <div>
@@ -65,7 +66,7 @@ export default async function RistoranteDetailPage({
             <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">
               {ristorante.citta[locale]}
             </p>
-            <h1 className="font-display text-5xl uppercase tracking-wide text-gold-bright md:text-7xl">
+            <h1 className="font-display text-3xl uppercase tracking-wide text-gold-bright sm:text-5xl md:text-7xl">
               {ristorante.nome}
             </h1>
             <p className="mt-5 max-w-2xl font-display text-xl italic text-cream/80">
@@ -90,7 +91,7 @@ export default async function RistoranteDetailPage({
 
           {/* Stelle & info laterale */}
           <RevealOnScroll delay={0.15}>
-            <aside className="space-y-6 rounded-bezel border border-gold/20 bg-white/5 p-8 md:col-span-5">
+            <aside className="space-y-4 rounded-bezel border border-gold/20 bg-white/5 p-6 md:col-span-5 md:space-y-6 md:p-8">
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gold/70">
                   {locale === "it" ? "Stelle Michelin" : "Michelin Stars"}
@@ -149,8 +150,8 @@ export default async function RistoranteDetailPage({
               <h2 className="font-display text-3xl uppercase tracking-wide text-cream">
                 {locale === "it" ? "I Piatti Signature" : "Signature Dishes"}
               </h2>
-              <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-                {piattiDelRistorante.map((p, index) => (
+              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                {piattiDelRistorante.slice(0, 6).map((p, index) => (
                   <RevealOnScroll key={p.slug} delay={index * 0.1}>
                     <a
                       href={`${BASE_PATH}/${locale}/piatti/${p.slug}/`}
@@ -170,12 +171,21 @@ export default async function RistoranteDetailPage({
                         <p className="mt-1 font-display text-sm italic text-cream/70">
                           {p.sottotitoloIronico[locale]}
                         </p>
-                        <p className="mt-2 text-xs text-cream/40">{p.sottotitoloIronico[locale]}</p>
                       </div>
                     </a>
                   </RevealOnScroll>
                 ))}
               </div>
+              {piattiDelRistorante.length > 6 && (
+                <div className="mt-8 text-center">
+                  <a
+                    href={`${BASE_PATH}/${locale}/piatti/`}
+                    className="text-sm uppercase tracking-[0.15em] text-gold/70 hover:text-gold transition-colors"
+                  >
+                    {locale === "it" ? `Vedi tutti i ${piattiDelRistorante.length} piatti →` : `See all ${piattiDelRistorante.length} dishes →`}
+                  </a>
+                </div>
+              )}
             </section>
           </RevealOnScroll>
         )}
