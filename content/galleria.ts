@@ -204,4 +204,12 @@ export const galleria: FotoGalleria[] = [
     },
     alt: { it: "Vigneto in fiore", en: "Vineyard in bloom" },
   },
+  {
+    file: "/images/galleria/damplo-luxury-yacht-barcelona.png",
+    caption: {
+      it: "Lo yacht di Ciccio al tramonto al porto di Barcellona. Usa ancora il metrò per andare al mercato del pesce. Solo andata.",
+      en: "Ciccio's yacht at sunset in Barcelona harbour. He still takes the metro to the fish market. One way only.",
+    },
+    alt: { it: "Yacht di lusso al porto di Barcellona", en: "Luxury yacht in Barcelona harbour" },
+  },
 ];
