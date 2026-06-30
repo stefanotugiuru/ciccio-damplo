@@ -38,9 +38,9 @@ export default async function HomePage({
       <section
         className="relative flex min-h-[88dvh] flex-col items-start justify-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('${BASE_PATH}/images/ciccio/ciccio-cucina.jpg')`,
+          backgroundImage: `url('${BASE_PATH}/images/ciccio/ciccio-cucina-hd.png')`,
           backgroundSize: "cover",
-          backgroundPosition: "center top",
+          backgroundPosition: "center 25%",
         }}
         role="img"
         aria-label={locale === "it" ? "Francesco D'Amplo in cucina" : "Francesco D'Amplo in his kitchen"}
@@ -189,9 +189,6 @@ export default async function HomePage({
                   <h3 className="font-display text-lg text-gold-bright">{p.nome}</h3>
                   <p className="mt-1 font-display text-sm italic text-cream/70">
                     {p.sottotitoloIronico[locale]}
-                  </p>
-                  <p className="mt-3 text-sm font-medium text-cream/50">
-                    {p.prezzoAssurdo[locale]}
                   </p>
                 </div>
               </a>

@@ -170,7 +170,7 @@ export default async function RistoranteDetailPage({
                         <p className="mt-1 font-display text-sm italic text-cream/70">
                           {p.sottotitoloIronico[locale]}
                         </p>
-                        <p className="mt-2 text-sm text-cream/50">{p.prezzoAssurdo[locale]}</p>
+                        <p className="mt-2 text-xs text-cream/40">{p.sottotitoloIronico[locale]}</p>
                       </div>
                     </a>
                   </RevealOnScroll>

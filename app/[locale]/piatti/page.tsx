@@ -41,8 +41,8 @@ export default async function PiattiPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? "Ogni piatto ha una storia. Ogni storia ha un prezzo. Ogni prezzo ti farà rivalutare le tue priorità finanziarie."
-              : "Every dish has a story. Every story has a price. Every price will make you reconsider your financial priorities."}
+              ? "Trentacinque piatti. Trentacinque ragioni per rivalutare le proprie priorità nella vita."
+              : "Thirty-five dishes. Thirty-five reasons to reconsider your priorities in life."}
           </p>
         </div>
       </RevealOnScroll>
@@ -69,10 +69,6 @@ export default async function PiattiPage({
                   loading={index === 0 ? undefined : "lazy"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                {/* Prezzo badge */}
-                <div className="absolute right-4 top-4 rounded-full border border-gold/40 bg-black/70 px-4 py-1.5 text-xs text-gold backdrop-blur-sm">
-                  {piatto.prezzoAssurdo[locale]}
-                </div>
               </div>
               <div className="p-6">
                 <h2
