@@ -46,10 +46,10 @@ export default async function BiografiaPage({
         <RevealOnScroll>
           <div className="relative z-10">
             <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">
-              {locale === "it" ? "Il personaggio" : "The man"}
+              {locale === "it" ? "Il visionario di Mineo" : "The visionary from Mineo"}
             </p>
             <h1 className="font-display text-4xl uppercase tracking-wide text-gold-bright md:text-6xl">
-              {locale === "it" ? "La Biografia" : "Biography"}
+              {locale === "it" ? "La Leggenda" : "The Legend"}
             </h1>
             <p className="mt-4 max-w-lg text-lg text-cream/80">{content.title}</p>
           </div>

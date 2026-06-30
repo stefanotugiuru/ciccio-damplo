@@ -77,8 +77,8 @@ export default async function HomePage({
             </p>
             <h2 className="font-display text-3xl italic text-cream md:text-4xl">
               {locale === "it"
-                ? "Un arancino che ha cambiato il mondo"
-                : "An arancino that changed the world"}
+                ? "Ha portato Mineo sul tetto del mondo. Mineo non gliel'ha ancora perdonato."
+                : "He put Mineo on top of the world. Mineo hasn't quite forgiven him for it."}
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-cream/80">
               {t.bioTeaser}

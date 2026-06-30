@@ -42,8 +42,8 @@ export default async function GalleriaPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? `${galleria.length} momenti che raccontano la leggenda di Ciccio Damplo.`
-              : `${galleria.length} moments that tell the legend of Ciccio Damplo.`}
+              ? `${galleria.length} immagini. Una sola leggenda. Nessuna di queste foto è stata scattata di nascosto.`
+              : `${galleria.length} images. One legend. None of these photos were taken without permission.`}
           </p>
         </div>
       </RevealOnScroll>

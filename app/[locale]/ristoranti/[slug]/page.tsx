@@ -115,8 +115,8 @@ export default async function RistoranteDetailPage({
                 </p>
                 <p className="mt-1 text-sm text-cream/70">
                   {locale === "it"
-                    ? "Solo su invito di Ciccio. O previo accordo con il suo agente."
-                    : "By Ciccio's invitation only. Or via prior agreement with his agent."}
+                    ? "Solo su invito di Ciccio. Il numero del suo agente non è pubblico. Per una ragione."
+                    : "By Ciccio's invitation only. His agent's number is not public. For a reason."}
                 </p>
               </div>
             </aside>

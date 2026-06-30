@@ -36,8 +36,8 @@ export default async function PressPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? "Le testate più autorevoli del settore gastronomico mondiale si sono espresse su Ciccio."
-              : "The most authoritative publications in world gastronomy have weighed in on Ciccio."}
+              ? "Quando la stampa gastronomica mondiale parla di cucina siciliana, parla di Ciccio. Quando parla di Ciccio, non sempre sa bene cosa sta dicendo. Ma lo dice con convinzione."
+              : "When the international food press talks about Sicilian cuisine, it talks about Ciccio. When it talks about Ciccio, it isn't always sure what it's saying. But it says it with conviction."}
           </p>
         </div>
       </RevealOnScroll>

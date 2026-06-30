@@ -40,8 +40,8 @@ export default async function PiattiPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? "Piatti che costano più del tuo affitto e valgono ogni centesimo. Probabilmente."
-              : "Dishes that cost more than your rent and are worth every cent. Probably."}
+              ? "Ogni piatto ha una storia. Ogni storia ha un prezzo. Ogni prezzo ti farà rivalutare le tue priorità finanziarie."
+              : "Every dish has a story. Every story has a price. Every price will make you reconsider your financial priorities."}
           </p>
         </div>
       </RevealOnScroll>

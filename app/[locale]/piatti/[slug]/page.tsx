@@ -127,12 +127,12 @@ export default async function PiattoDetailPage({
               <hr className="border-white/10" />
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gold/70">
-                  {locale === "it" ? "Avvertenza" : "Warning"}
+                  {locale === "it" ? "Avvertenza legale" : "Legal notice"}
                 </p>
                 <p className="mt-1 text-sm text-cream/60">
                   {locale === "it"
-                    ? "Ciccio non è responsabile per reazioni emotive, pianti inaspettati o crisi esistenziali."
-                    : "Ciccio is not responsible for emotional reactions, unexpected crying, or existential crises."}
+                    ? "Ciccio declina ogni responsabilità per reazioni emotive, pianti inaspettati, crisi esistenziali o rivalutazione improvvisa del proprio rapporto con il cibo."
+                    : "Ciccio accepts no liability for emotional reactions, unexpected crying, existential crises, or sudden reassessment of one's relationship with food."}
                 </p>
               </div>
             </aside>

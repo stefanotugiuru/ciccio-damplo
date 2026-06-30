@@ -40,8 +40,8 @@ export default async function PremiPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? "Riconoscimenti ottenuti nel corso di una carriera straordinaria. Alcuni più verificabili di altri."
-              : "Awards earned over an extraordinary career. Some more verifiable than others."}
+              ? "Riconoscimenti che Ciccio espone con la stessa discrezione con cui una Ferrari si parcheggia davanti a un ristorante."
+              : "Awards Ciccio displays with the same discretion a Ferrari is parked in front of a restaurant."}
           </p>
         </div>
       </RevealOnScroll>

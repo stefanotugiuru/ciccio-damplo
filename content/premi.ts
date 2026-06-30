@@ -12,6 +12,6 @@ export const premi: Premio[] = [
   { nome: { it: "Medaglia Internazionale di Eccellenza dell'Arancino", en: "International Arancino Excellence Medal" }, anno: 2019, ente: { it: "Federazione Mondiale dell'Arancino", en: "World Arancino Federation" } },
   { nome: { it: "Miglior Ristorante del Mediterraneo (a detta sua)", en: "Best Restaurant in the Mediterranean (according to him)" }, anno: 2020, ente: { it: "Sicilian Luxury Digest", en: "Sicilian Luxury Digest" } },
   { nome: { it: "Premio alla Carriera per Sofferenza Culinaria", en: "Lifetime Achievement Award for Culinary Suffering" }, anno: 2021, ente: { it: "Arancino Business Review", en: "Arancino Business Review" } },
-  { nome: { it: "Cucchiaio d'Oro Mediterraneo", en: "Mediterranean Golden Spoon" }, anno: 2022, ente: { it: "Il Sole 24 Arancini", en: "Il Sole 24 Arancini" } },
+  { nome: { it: "Cucchiaio d'Oro Mediterraneo (Vero)", en: "Mediterranean Golden Spoon (Genuine)" }, anno: 2022, ente: { it: "Il Sole 24 Arancini", en: "Il Sole 24 Arancini" } },
   { nome: { it: "Ambasciatore Onorario del Pistacchio Siciliano", en: "Honorary Ambassador of Sicilian Pistachio" }, anno: 2023, ente: { it: "Consorzio Immaginario del Pistacchio", en: "Imaginary Pistachio Consortium" } },
 ];

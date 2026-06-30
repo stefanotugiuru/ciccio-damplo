@@ -2,54 +2,54 @@ export const home = {
   it: {
     // Hero
     heading: "Francesco D'Amplo",
-    subheading: "Chef, visionario, imprenditore del lusso siciliano.",
+    subheading: "Chef. Visionario. Ragazzo di Mineo.",
     stats: "4 ristoranti · 3 continenti · 12 stelle (autoassegnate)",
     // Bio teaser
     bioLabel: "Chi è Ciccio",
     bioTeaser:
       "Nato a Mineo nel 1984, Francesco D'Amplo ha trasformato un arancino in un impero gastronomico che attraversa tre continenti. Piange ogni volta che assaggia la propria Pasta alla Norma. Lo chiama «controllo qualità».",
-    bioCta: "Leggi la biografia completa",
+    bioCta: "Leggi la biografia",
     // Sections
     ristorantiLabel: "I Ristoranti",
-    ristorantiCta: "Vedi tutti i ristoranti",
+    ristorantiCta: "Scopri i ristoranti",
     piattiLabel: "I Piatti Iconici",
-    piattiCta: "Vedi tutti i piatti",
+    piattiCta: "Vedi il menu completo",
     pressLabel: "Dicono di Lui",
     galleriaLabel: "Ciccio nel Mondo",
-    galleriaCta: "Vedi la galleria completa",
+    galleriaCta: "Vedi la galleria",
     premiLabel: "Riconoscimenti",
-    premiCta: "Vedi tutti i premi",
-    // Intro / quote (homepage mini-section)
+    premiCta: "Tutti i premi",
+    // Intro / quote
     intro:
-      "Quattro ristoranti, tre continenti, e un numero di stelle Michelin che lui stesso ha perso il conto. Benvenuti nel mondo di Ciccio Damplo.",
+      "Quattro ristoranti. Tre continenti. Dodici stelle Michelin, autoassegnate con piena convinzione. Ciccio non ha bisogno della vostra approvazione. Ma è contento di averla.",
     quote:
-      "“La cucina siciliana non si cucina. Si dirige, come un film.” — Francesco D’Amplo",
+      `"La cucina siciliana non si cucina. Si dirige, come un film." — Francesco D'Amplo`,
   },
   en: {
     // Hero
     heading: "Francesco D'Amplo",
-    subheading: "Chef, visionary, Sicilian luxury entrepreneur.",
+    subheading: "Chef. Visionary. Boy from Mineo.",
     stats: "4 restaurants · 3 continents · 12 stars (self-awarded)",
     // Bio teaser
     bioLabel: "Who Is Ciccio",
     bioTeaser:
       "Born in Mineo in 1984, Francesco D'Amplo turned an arancino into a gastronomic empire spanning three continents. He cries every time he tastes his own Pasta alla Norma. He calls it «quality control».",
-    bioCta: "Read the full biography",
+    bioCta: "Read the biography",
     // Sections
     ristorantiLabel: "The Restaurants",
-    ristorantiCta: "See all restaurants",
+    ristorantiCta: "Explore the restaurants",
     piattiLabel: "Iconic Dishes",
-    piattiCta: "See all dishes",
+    piattiCta: "See the full menu",
     pressLabel: "What They Say",
     galleriaLabel: "Ciccio Around the World",
-    galleriaCta: "See the full gallery",
+    galleriaCta: "See the gallery",
     premiLabel: "Awards & Recognition",
-    premiCta: "See all awards",
+    premiCta: "All awards",
     // Intro / quote
     intro:
-      "Four restaurants, three continents, and a number of Michelin stars even he has lost count of. Welcome to the world of Ciccio Damplo.",
+      "Four restaurants. Three continents. Twelve Michelin stars, self-awarded with full conviction. Ciccio doesn't need your approval. But he's glad to have it.",
     quote:
-      "“Sicilian cuisine isn’t cooked. It’s directed, like a film.” — Francesco D’Amplo",
+      `"Sicilian cuisine isn't cooked. It's directed, like a film." — Francesco D'Amplo`,
   },
 } as const;
 

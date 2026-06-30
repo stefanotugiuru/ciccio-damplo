@@ -40,8 +40,8 @@ export default async function RistorantiPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? "Quattro location. Tre continenti. Un solo arancino che le governa tutte."
-              : "Four locations. Three continents. One arancino to rule them all."}
+              ? "Mineo, Dubai, Monaco, New York. L'arancino non conosce confini. Né pudore nei prezzi."
+              : "Mineo, Dubai, Monaco, New York. The arancino knows no borders. Or pricing restraint."}
           </p>
         </div>
       </RevealOnScroll>
