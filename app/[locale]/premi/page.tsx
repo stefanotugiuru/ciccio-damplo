@@ -30,24 +30,58 @@ export default async function PremiPage({
   }
 
   return (
-    <div className="mx-auto max-w-2xl px-6 py-16">
+    <div className="px-6 py-20 md:px-8">
+      {/* Header */}
       <RevealOnScroll>
-        <h1 className="text-center font-display text-3xl uppercase tracking-wide text-gold-bright md:text-5xl">
-          {locale === "it" ? "Premi e Riconoscimenti" : "Awards & Recognitions"}
-        </h1>
+        <div className="mb-20 text-center">
+          <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">Damplo Group</p>
+          <h1 className="font-display text-4xl uppercase tracking-wide text-cream md:text-6xl">
+            {locale === "it" ? "Premi e Riconoscimenti" : "Awards & Recognitions"}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-cream/60">
+            {locale === "it"
+              ? "Riconoscimenti ottenuti nel corso di una carriera straordinaria. Alcuni più verificabili di altri."
+              : "Awards earned over an extraordinary career. Some more verifiable than others."}
+          </p>
+        </div>
       </RevealOnScroll>
-      <ul className="mt-12 space-y-0">
+
+      {/* Grid premi */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {premi.map((premio, index) => (
           <RevealOnScroll key={premio.nome.it} delay={Math.min(index * 0.05, 0.4)}>
-            <li className="border-b border-gold/20 py-4">
-              <p className="text-cream">
-                <strong>{premio.nome[locale]}</strong> — {premio.anno}
+            <div className="group relative overflow-hidden rounded-bezel border border-white/10 bg-white/5 p-8 transition-colors duration-500 hover:border-gold/30">
+              {/* Anno watermark */}
+              <p className="pointer-events-none absolute right-4 top-2 font-display text-7xl font-bold text-white/5 select-none">
+                {premio.anno}
               </p>
-              <p className="mt-1 text-sm text-cream/70">{premio.ente[locale]}</p>
-            </li>
+
+              <div className="relative">
+                <p className="font-display text-3xl text-gold">★</p>
+                <h2 className="mt-4 font-display text-lg text-cream">
+                  {premio.nome[locale]}
+                </h2>
+                <p className="mt-2 text-sm text-cream/50">{premio.ente[locale]}</p>
+                <p className="mt-4 inline-block rounded-full border border-gold/20 px-3 py-1 text-xs text-gold/70">
+                  {premio.anno}
+                </p>
+              </div>
+            </div>
           </RevealOnScroll>
         ))}
-      </ul>
+      </div>
+
+      {/* Stats bottom */}
+      <RevealOnScroll>
+        <div className="mt-20 rounded-bezel border border-white/10 bg-white/5 p-10 text-center">
+          <p className="font-display text-5xl text-gold-bright">{premi.length}</p>
+          <p className="mt-2 text-cream/60">
+            {locale === "it"
+              ? "riconoscimenti totali, distribuiti su oltre un decennio di eccellenza culinaria"
+              : "total recognitions, distributed over more than a decade of culinary excellence"}
+          </p>
+        </div>
+      </RevealOnScroll>
     </div>
   );
 }

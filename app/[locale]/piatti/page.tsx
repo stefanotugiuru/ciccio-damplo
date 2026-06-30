@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { piatti } from "@/content/piatti";
-import BentoGrid from "@/components/BentoGrid";
-import Card from "@/components/Card";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -32,23 +30,68 @@ export default async function PiattiPage({
   }
 
   return (
-    <div>
+    <div className="px-6 py-20 md:px-8">
+      {/* Header */}
       <RevealOnScroll>
-        <h1 className="px-6 pt-12 text-center font-display text-3xl uppercase tracking-wide text-gold-bright md:text-5xl">
-          {locale === "it" ? "Piatti Iconici" : "Iconic Dishes"}
-        </h1>
+        <div className="mb-16 text-center">
+          <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">Menu</p>
+          <h1 className="font-display text-4xl uppercase tracking-wide text-cream md:text-6xl">
+            {locale === "it" ? "I Piatti Iconici" : "Iconic Dishes"}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-cream/60">
+            {locale === "it"
+              ? "Piatti che costano più del tuo affitto e valgono ogni centesimo. Probabilmente."
+              : "Dishes that cost more than your rent and are worth every cent. Probably."}
+          </p>
+        </div>
       </RevealOnScroll>
-      <BentoGrid>
+
+      {/* Grid: primo piatto largo */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {piatti.map((piatto, index) => (
-          <RevealOnScroll key={piatto.slug} delay={Math.min(index, 2) * 0.1}>
-            <Card href={`/piatti/${piatto.slug}`}>
-              <h2 className="font-display text-xl text-gold-bright">{piatto.nome}</h2>
-              <p className="mt-4 font-display italic text-cream/90">{piatto.sottotitoloIronico[locale]}</p>
-              <p className="mt-4 text-sm text-cream/70">{piatto.prezzoAssurdo[locale]}</p>
-            </Card>
+          <RevealOnScroll key={piatto.slug} delay={Math.min(index, 2) * 0.08}>
+            <a
+              href={`/${locale}/piatti/${piatto.slug}/`}
+              className={`group block overflow-hidden rounded-bezel border border-white/10 bg-white/5 transition-colors duration-500 hover:border-gold/30 ${
+                index === 0 ? "md:col-span-2" : ""
+              }`}
+            >
+              <div
+                className={`relative overflow-hidden ${
+                  index === 0 ? "aspect-[21/9]" : "aspect-video"
+                }`}
+              >
+                <img
+                  src={`/images/piatti/${piatto.slug}.jpg`}
+                  alt={piatto.nome}
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading={index === 0 ? undefined : "lazy"}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                {/* Prezzo badge */}
+                <div className="absolute right-4 top-4 rounded-full border border-gold/40 bg-black/70 px-4 py-1.5 text-xs text-gold backdrop-blur-sm">
+                  {piatto.prezzoAssurdo[locale]}
+                </div>
+              </div>
+              <div className="p-6">
+                <h2
+                  className={`font-display text-gold-bright ${
+                    index === 0 ? "text-2xl md:text-3xl" : "text-xl"
+                  }`}
+                >
+                  {piatto.nome}
+                </h2>
+                <p className="mt-2 font-display text-sm italic text-cream/70">
+                  {piatto.sottotitoloIronico[locale]}
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-cream/60">
+                  {piatto.descrizione[locale].slice(0, 120)}…
+                </p>
+              </div>
+            </a>
           </RevealOnScroll>
         ))}
-      </BentoGrid>
+      </div>
     </div>
   );
 }

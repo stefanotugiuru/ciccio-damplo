@@ -30,25 +30,38 @@ export default async function GalleriaPage({
   }
 
   return (
-    <div>
+    <div className="px-6 py-20 md:px-8">
+      {/* Header */}
       <RevealOnScroll>
-        <h1 className="px-6 pt-12 text-center font-display text-3xl uppercase tracking-wide text-gold-bright md:text-5xl">
-          {locale === "it" ? "Galleria" : "Gallery"}
-        </h1>
+        <div className="mb-16 text-center">
+          <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">
+            {locale === "it" ? "Archivio visivo" : "Visual archive"}
+          </p>
+          <h1 className="font-display text-4xl uppercase tracking-wide text-cream md:text-6xl">
+            {locale === "it" ? "Galleria" : "Gallery"}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-cream/60">
+            {locale === "it"
+              ? `${galleria.length} momenti che raccontano la leggenda di Ciccio Damplo.`
+              : `${galleria.length} moments that tell the legend of Ciccio Damplo.`}
+          </p>
+        </div>
       </RevealOnScroll>
-      <div className="grid grid-cols-1 gap-6 px-6 py-12 md:grid-cols-3">
+
+      {/* Layout a colonne CSS (masonry nativo) */}
+      <div className="columns-2 gap-4 md:columns-3 lg:columns-4 [column-fill:_balance]">
         {galleria.map((foto, index) => (
-          <RevealOnScroll key={foto.file} delay={Math.min(index * 0.05, 0.3)}>
-            <figure className="overflow-hidden rounded-bezel border border-white/10 bg-white/5 p-1.5">
-              <div className="overflow-hidden rounded-[calc(2rem-0.375rem)]">
-                <img
-                  src={foto.file}
-                  alt={foto.alt[locale]}
-                  loading={index < 3 ? undefined : "lazy"}
-                  className="h-64 w-full object-cover"
-                />
-              </div>
-              <figcaption className="px-2 py-3 text-sm text-cream/80">{foto.caption[locale]}</figcaption>
+          <RevealOnScroll key={foto.file} delay={Math.min(index * 0.03, 0.3)}>
+            <figure className="mb-4 break-inside-avoid overflow-hidden rounded-[1.25rem] border border-white/10 bg-white/5">
+              <img
+                src={foto.file}
+                alt={foto.alt[locale]}
+                loading={index < 8 ? undefined : "lazy"}
+                className="w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+              />
+              <figcaption className="px-3 py-2.5 text-xs leading-relaxed text-cream/70">
+                {foto.caption[locale]}
+              </figcaption>
             </figure>
           </RevealOnScroll>
         ))}

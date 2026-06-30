@@ -41,37 +41,91 @@ export default async function PressDetailPage({
   }
 
   const articolo = press.find((item) => item.slug === slug);
-
   if (!articolo) {
     notFound();
   }
 
+  const altriArticoli = press.filter((a) => a.slug !== articolo.slug);
+
   return (
-    <article className="mx-auto max-w-3xl px-6 py-16">
-      <RevealOnScroll>
-        <p className="font-display text-sm italic text-gold">
-          {articolo.testata} — {formatDate(articolo.data, locale)}
-        </p>
-        <h1 className="mt-2 font-display text-3xl uppercase tracking-wide text-gold-bright md:text-4xl">
-          {articolo.titolo[locale]}
-        </h1>
-      </RevealOnScroll>
-      <div className="mt-8 rounded-bezel border border-white/10 bg-white/5 p-1.5">
-        <img
-          src={`/images/press/${articolo.slug}.jpg`}
-          alt={
-            locale === "it"
-              ? `Copertina di ${articolo.testata}`
-              : `Cover image of ${articolo.testata}`
-          }
-          className="aspect-[3/2] w-full rounded-[calc(2rem-0.375rem)] object-cover"
-        />
-      </div>
-      {articolo.corpo[locale].map((paragraph, index) => (
-        <RevealOnScroll key={index} delay={Math.min(index * 0.1, 0.3)}>
-          <p className="mt-6 text-lg text-cream/90">{paragraph}</p>
+    <div>
+      {/* ── Hero cover ── */}
+      <section
+        className="relative flex min-h-[50dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
+        style={{
+          backgroundImage: `url('/images/press/${articolo.slug}.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
+        <RevealOnScroll>
+          <div className="relative z-10">
+            <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">
+              {articolo.testata} — {formatDate(articolo.data, locale)}
+            </p>
+            <h1 className="font-display text-3xl uppercase tracking-wide text-gold-bright md:text-5xl">
+              {articolo.titolo[locale]}
+            </h1>
+          </div>
         </RevealOnScroll>
-      ))}
-    </article>
+      </section>
+
+      {/* ── Corpo articolo ── */}
+      <article className="mx-auto max-w-3xl px-6 py-20 md:px-8">
+        {/* Estratto in evidenza */}
+        <RevealOnScroll>
+          <p className="font-display text-xl italic leading-relaxed text-gold-bright">
+            {articolo.estratto[locale]}
+          </p>
+        </RevealOnScroll>
+
+        <hr className="my-10 border-white/10" />
+
+        {articolo.corpo[locale].map((paragraph, index) => (
+          <RevealOnScroll key={index} delay={Math.min(index * 0.1, 0.3)}>
+            <p className="mt-8 text-lg leading-relaxed text-cream/90 first:mt-0">
+              {paragraph}
+            </p>
+          </RevealOnScroll>
+        ))}
+      </article>
+
+      {/* ── Altri articoli ── */}
+      <section className="border-t border-white/10 px-6 py-16 md:px-8">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-8 font-display text-2xl uppercase tracking-wide text-cream">
+            {locale === "it" ? "Leggi Anche" : "Read Also"}
+          </h2>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            {altriArticoli.map((a, index) => (
+              <RevealOnScroll key={a.slug} delay={index * 0.07}>
+                <a
+                  href={`/${locale}/press/${a.slug}/`}
+                  className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 transition-colors hover:border-gold/30"
+                >
+                  <div className="relative aspect-video overflow-hidden">
+                    <img
+                      src={`/images/press/${a.slug}.jpg`}
+                      alt={a.testata}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2 py-0.5 text-xs text-cream/70 backdrop-blur-sm">
+                      {a.testata}
+                    </span>
+                  </div>
+                  <div className="p-4">
+                    <p className="font-display text-sm text-gold-bright">{a.titolo[locale]}</p>
+                    <p className="mt-1 text-xs text-cream/40">{a.data}</p>
+                  </div>
+                </a>
+              </RevealOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

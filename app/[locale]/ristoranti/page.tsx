@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { ristoranti } from "@/content/ristoranti";
-import BentoGrid from "@/components/BentoGrid";
-import Card from "@/components/Card";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -32,23 +30,68 @@ export default async function RistorantiPage({
   }
 
   return (
-    <div>
+    <div className="px-6 py-20 md:px-8">
+      {/* Header */}
       <RevealOnScroll>
-        <h1 className="px-6 pt-12 text-center font-display text-3xl uppercase tracking-wide text-gold-bright md:text-5xl">
-          {locale === "it" ? "I Ristoranti Damplo" : "The Damplo Restaurants"}
-        </h1>
+        <div className="mb-16 text-center">
+          <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">Damplo Group</p>
+          <h1 className="font-display text-4xl uppercase tracking-wide text-cream md:text-6xl">
+            {locale === "it" ? "I Ristoranti" : "The Restaurants"}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-cream/60">
+            {locale === "it"
+              ? "Quattro location. Tre continenti. Un solo arancino che le governa tutte."
+              : "Four locations. Three continents. One arancino to rule them all."}
+          </p>
+        </div>
       </RevealOnScroll>
-      <BentoGrid>
+
+      {/* Grid: first card is large (flagship), rest are half-width */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {ristoranti.map((ristorante, index) => (
-          <RevealOnScroll key={ristorante.slug} delay={Math.min(index, 2) * 0.1}>
-            <Card href={`/ristoranti/${ristorante.slug}`}>
-              <h2 className="font-display text-xl text-gold-bright">{ristorante.nome}</h2>
-              <p className="mt-1 text-sm text-cream/70">{ristorante.citta[locale]}</p>
-              <p className="mt-4 font-display italic text-cream/90">{ristorante.tagline[locale]}</p>
-            </Card>
+          <RevealOnScroll key={ristorante.slug} delay={Math.min(index, 2) * 0.08}>
+            <a
+              href={`/${locale}/ristoranti/${ristorante.slug}/`}
+              className={`group relative block overflow-hidden rounded-bezel ${
+                index === 0 ? "md:col-span-2 aspect-[16/7]" : "aspect-[4/3]"
+              }`}
+            >
+              <img
+                src={`/images/ristoranti/${ristorante.slug}-hero.jpg`}
+                alt={ristorante.nome}
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading={index === 0 ? undefined : "lazy"}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
+
+              {/* Badge stelle */}
+              <div className="absolute right-5 top-5 rounded-full border border-gold/50 bg-black/60 px-4 py-1.5 text-xs text-gold backdrop-blur-sm">
+                {"★".repeat(ristorante.stelleMichelinFinte)}{" "}
+                <span className="text-gold/60">
+                  ({ristorante.stelleMichelinFinte} {locale === "it" ? "stelle" : "stars"})
+                </span>
+              </div>
+
+              <div className="absolute bottom-0 left-0 p-7">
+                <h2
+                  className={`font-display uppercase tracking-wide text-gold-bright ${
+                    index === 0 ? "text-3xl md:text-5xl" : "text-2xl md:text-3xl"
+                  }`}
+                >
+                  {ristorante.nome}
+                </h2>
+                <p className="mt-1.5 text-sm text-cream/70">{ristorante.citta[locale]}</p>
+                <p className="mt-3 max-w-md font-display text-sm italic text-cream/80">
+                  {ristorante.tagline[locale]}
+                </p>
+                <p className="mt-4 inline-block text-xs uppercase tracking-[0.15em] text-gold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  {locale === "it" ? "Scopri →" : "Explore →"}
+                </p>
+              </div>
+            </a>
           </RevealOnScroll>
         ))}
-      </BentoGrid>
+      </div>
     </div>
   );
 }

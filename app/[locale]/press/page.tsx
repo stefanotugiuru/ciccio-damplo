@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { press } from "@/content/press";
-import BentoGrid from "@/components/BentoGrid";
-import Card from "@/components/Card";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -28,23 +26,69 @@ export default async function PressPage({
   }
 
   return (
-    <div>
+    <div className="px-6 py-20 md:px-8">
+      {/* Header */}
       <RevealOnScroll>
-        <h1 className="px-6 pt-12 text-center font-display text-3xl uppercase tracking-wide text-gold-bright md:text-5xl">
-          {locale === "it" ? "Rassegna Stampa" : "Press Coverage"}
-        </h1>
+        <div className="mb-16 text-center">
+          <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gold">Media</p>
+          <h1 className="font-display text-4xl uppercase tracking-wide text-cream md:text-6xl">
+            {locale === "it" ? "Rassegna Stampa" : "Press Coverage"}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-cream/60">
+            {locale === "it"
+              ? "Le testate più autorevoli del settore gastronomico mondiale si sono espresse su Ciccio."
+              : "The most authoritative publications in world gastronomy have weighed in on Ciccio."}
+          </p>
+        </div>
       </RevealOnScroll>
-      <BentoGrid>
+
+      {/* Grid: primo articolo grande */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {press.map((articolo, index) => (
-          <RevealOnScroll key={articolo.slug} delay={Math.min(index, 2) * 0.1}>
-            <Card href={`/press/${articolo.slug}`}>
-              <p className="text-xs uppercase tracking-wide text-cream/60">{articolo.testata}</p>
-              <h2 className="mt-2 font-display text-lg text-gold-bright">{articolo.titolo[locale]}</h2>
-              <p className="mt-3 text-sm text-cream/80">{articolo.estratto[locale]}</p>
-            </Card>
+          <RevealOnScroll key={articolo.slug} delay={Math.min(index, 2) * 0.08}>
+            <a
+              href={`/${locale}/press/${articolo.slug}/`}
+              className={`group block overflow-hidden rounded-bezel border border-white/10 bg-white/5 transition-colors duration-500 hover:border-gold/30 ${
+                index === 0 ? "md:col-span-2" : ""
+              }`}
+            >
+              {/* Cover image */}
+              <div
+                className={`relative overflow-hidden ${
+                  index === 0 ? "aspect-[21/9]" : "aspect-[16/9]"
+                }`}
+              >
+                <img
+                  src={`/images/press/${articolo.slug}.jpg`}
+                  alt={articolo.testata}
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading={index === 0 ? undefined : "lazy"}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                {/* Testata badge */}
+                <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/60 px-3 py-1 text-xs text-cream/80 backdrop-blur-sm">
+                  {articolo.testata}
+                </div>
+              </div>
+
+              {/* Testo */}
+              <div className="p-6">
+                <h2
+                  className={`font-display text-gold-bright ${
+                    index === 0 ? "text-2xl md:text-3xl" : "text-lg"
+                  }`}
+                >
+                  {articolo.titolo[locale]}
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-cream/70">
+                  {articolo.estratto[locale]}
+                </p>
+                <p className="mt-4 text-xs text-cream/40">{articolo.data}</p>
+              </div>
+            </a>
           </RevealOnScroll>
         ))}
-      </BentoGrid>
+      </div>
     </div>
   );
 }
