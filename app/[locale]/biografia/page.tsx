@@ -62,12 +62,21 @@ export default async function BiografiaPage({
 
           {/* Colonna testo */}
           <article className="md:col-span-7">
-            {content.paragraphs.map((paragraph, index) => (
-              <RevealOnScroll key={index} delay={Math.min(index, 2) * 0.1}>
-                <p className="mt-8 text-lg leading-relaxed text-cream/90 first:mt-0">
-                  {paragraph}
-                </p>
-              </RevealOnScroll>
+            {content.sections.map((section, sIndex) => (
+              <div key={sIndex} className={sIndex > 0 ? "mt-12" : ""}>
+                <RevealOnScroll>
+                  <h2 className="font-display text-sm uppercase tracking-[0.2em] text-gold">
+                    {section.titolo}
+                  </h2>
+                </RevealOnScroll>
+                {section.paragrafi.map((paragrafo, pIndex) => (
+                  <RevealOnScroll key={pIndex} delay={Math.min(pIndex, 1) * 0.08}>
+                    <p className="mt-4 text-lg leading-relaxed text-cream/90">
+                      {paragrafo}
+                    </p>
+                  </RevealOnScroll>
+                ))}
+              </div>
             ))}
 
             {/* Pull quote */}
@@ -118,9 +127,9 @@ export default async function BiografiaPage({
         <RevealOnScroll>
           <div className="mt-20 grid grid-cols-2 gap-4 border-t border-white/10 pt-16 md:grid-cols-4">
             {[
-              { n: "4", label: locale === "it" ? "Ristoranti" : "Restaurants" },
-              { n: "3", label: locale === "it" ? "Continenti" : "Continents" },
-              { n: "12", label: locale === "it" ? "Stelle (autoass.)" : "Stars (self-awarded)" },
+              { n: "10", label: locale === "it" ? "Ristoranti" : "Restaurants" },
+              { n: "5", label: locale === "it" ? "Continenti" : "Continents" },
+              { n: "★★★", label: locale === "it" ? "Stelle Michelin" : "Michelin Stars" },
               { n: "9+", label: locale === "it" ? "Premi" : "Awards" },
             ].map((stat) => (
               <div key={stat.n} className="text-center">

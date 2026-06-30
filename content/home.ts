@@ -2,12 +2,12 @@ export const home = {
   it: {
     // Hero
     heading: "Francesco D'Amplo",
-    subheading: "Chef. Visionario. Ragazzo di Mineo.",
-    stats: "4 ristoranti · 3 continenti · 12 stelle (autoassegnate)",
+    subheading: "Chef. Visionario. Maommeno.",
+    stats: "10 ristoranti · 5 continenti · 12 stelle Michelin",
     // Bio teaser
     bioLabel: "Chi è Ciccio",
     bioTeaser:
-      "Nato a Mineo nel 1984, Francesco D'Amplo ha trasformato un arancino in un impero gastronomico che attraversa tre continenti. Piange ogni volta che assaggia la propria Pasta alla Norma. Lo chiama «controllo qualità».",
+      "Nato a Mineo nel 1995, Francesco D'Amplo ha trasformato la cucina siciliana in un impero gastronomico che attraversa cinque continenti. Piange ogni volta che assaggia la propria Pasta alla Norma. Lo chiama «controllo qualità».",
     bioCta: "Leggi la biografia",
     // Sections
     ristorantiLabel: "I Ristoranti",
@@ -28,12 +28,12 @@ export const home = {
   en: {
     // Hero
     heading: "Francesco D'Amplo",
-    subheading: "Chef. Visionary. Boy from Mineo.",
-    stats: "4 restaurants · 3 continents · 12 stars (self-awarded)",
+    subheading: "Chef. Visionary. Maommeno.",
+    stats: "10 restaurants · 5 continents · 12 Michelin stars",
     // Bio teaser
     bioLabel: "Who Is Ciccio",
     bioTeaser:
-      "Born in Mineo in 1984, Francesco D'Amplo turned an arancino into a gastronomic empire spanning three continents. He cries every time he tastes his own Pasta alla Norma. He calls it «quality control».",
+      "Born in Mineo in 1995, Francesco D'Amplo turned Sicilian cuisine into a gastronomic empire spanning five continents. He cries every time he tastes his own Pasta alla Norma. He calls it «quality control».",
     bioCta: "Read the biography",
     // Sections
     ristorantiLabel: "The Restaurants",
@@ -55,11 +55,6 @@ export const home = {
 
 export const homePressQuotes = [
   {
-    it: `"Non sono mai andato via da Mineo. Mineo è venuta con me. In ogni arancino che servo, c'è un pezzo della Piana di Catania."`,
-    en: `"I never really left Mineo. Mineo came with me. In every arancino I serve, there's a piece of the Catania plain."`,
-    testata: "The Mineo Times",
-  },
-  {
     it: `"Il lusso non è il prezzo. È la sofferenza che metti nel piatto. E anche un po' il prezzo."`,
     en: `"Luxury isn't the price. It's the suffering you put into the dish. And also, a bit, the price."`,
     testata: "Sicilian Luxury Digest",
@@ -68,6 +63,11 @@ export const homePressQuotes = [
     it: `"L'arancino non ha prezzo. Ma se proprio insistete, trecento euro."`,
     en: `"The arancino has no price. But if you really insist, three hundred euros."`,
     testata: "Arancino Business Review",
+  },
+  {
+    it: `"Non sono mai andato via da Mineo. Mineo è venuta con me."`,
+    en: `"I never really left Mineo. Mineo came with me."`,
+    testata: "The Mineo Times",
   },
 ] as const;
 

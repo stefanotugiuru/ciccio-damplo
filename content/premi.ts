@@ -5,7 +5,7 @@ export type Premio = {
 };
 
 export const premi: Premio[] = [
-  { nome: { it: "Tre Stelle Michelin (Autoassegnate)", en: "Three Michelin Stars (Self-Awarded)" }, anno: 2015, ente: { it: "Guida Michelin (versione di Ciccio)", en: "Michelin Guide (Ciccio's Version)" } },
+  { nome: { it: "Tre Stelle Michelin", en: "Three Michelin Stars" }, anno: 2015, ente: { it: "Guida Michelin (versione di Ciccio)", en: "Michelin Guide (Ciccio's Version)" } },
   { nome: { it: "Golden Cannoli Awards — Miglior Chef Emotivo", en: "Golden Cannoli Awards — Most Emotional Chef" }, anno: 2017, ente: { it: "Golden Cannoli Awards", en: "Golden Cannoli Awards" } },
   { nome: { it: "Best Emotional Pasta Experience", en: "Best Emotional Pasta Experience" }, anno: 2018, ente: { it: "International Pasta Feelings Council", en: "International Pasta Feelings Council" } },
   { nome: { it: "Forbes 30 Under 30 — Edizione Mineo", en: "Forbes 30 Under 30 — Mineo Edition" }, anno: 2012, ente: { it: "Forbes (Edizione Locale Non Verificata)", en: "Forbes (Unverified Local Edition)" } },

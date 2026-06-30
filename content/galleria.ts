@@ -83,8 +83,8 @@ export const galleria: FotoGalleria[] = [
   {
     file: "/images/galleria/ciccio-con-gordon-ramsey.png",
     caption: {
-      it: "Ciccio e Gordon Ramsay: due stelle, un solo arancino, nessun accordo sul prezzo.",
-      en: "Ciccio and Gordon Ramsay: two stars, one arancino, no agreement on price.",
+      it: "Ciccio e Gordon Ramsay: due chef, un solo piatto, nessun accordo sul prezzo.",
+      en: "Ciccio and Gordon Ramsay: two chefs, one dish, no agreement on price.",
     },
     alt: { it: "Ciccio con Gordon Ramsay", en: "Ciccio with Gordon Ramsay" },
   },
@@ -115,8 +115,8 @@ export const galleria: FotoGalleria[] = [
   {
     file: "/images/galleria/ciccio-col-papa.png",
     caption: {
-      it: "Il Papa ha assaggiato l'arancino. Non ha più parlato per tre giorni. Chiamano miracolo anche questo.",
-      en: "The Pope tried the arancino. He didn't speak for three days. Some call it a miracle.",
+      it: "Il Papa ha assaggiato la Pasta alla Norma. Non ha più parlato per tre giorni. Chiamano miracolo anche questo.",
+      en: "The Pope tried the Pasta alla Norma. He didn't speak for three days. Some call it a miracle.",
     },
     alt: { it: "Ciccio con il Papa", en: "Ciccio with the Pope" },
   },
@@ -243,8 +243,8 @@ export const galleria: FotoGalleria[] = [
   {
     file: "/images/galleria/damplo-roma.png",
     caption: {
-      it: "Damplo Roma: un arancino tra i Fori Imperiali. Augusto avrebbe approvato.",
-      en: "Damplo Roma: an arancino among the Imperial Fora. Augustus would have approved.",
+      it: "Damplo Roma: la cucina siciliana sbarca nella capitale. Augusto avrebbe approvato.",
+      en: "Damplo Roma: Sicilian cuisine lands in the capital. Augustus would have approved.",
     },
     alt: { it: "Damplo Roma", en: "Damplo Roma" },
   },
@@ -259,8 +259,8 @@ export const galleria: FotoGalleria[] = [
   {
     file: "/images/galleria/damplo-melbourne.png",
     caption: {
-      it: "Damplo Melbourne: 16.000 km da Mineo. L'arancino ha fatto il viaggio senza lamentarsi.",
-      en: "Damplo Melbourne: 16,000 km from Mineo. The arancino made the trip without complaining.",
+      it: "Damplo Melbourne: 16.000 km da Mineo. La cucina siciliana ha fatto il viaggio senza lamentarsi.",
+      en: "Damplo Melbourne: 16,000 km from Mineo. Sicilian cuisine made the trip without complaining.",
     },
     alt: { it: "Damplo Melbourne", en: "Damplo Melbourne" },
   },

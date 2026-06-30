@@ -98,7 +98,7 @@ export default async function RistoranteDetailPage({
                   {"★".repeat(ristorante.stelleMichelinFinte)}
                 </p>
                 <p className="mt-1 text-sm text-cream/50">
-                  {locale === "it" ? "(autoassegnate, ma sentite)" : "(self-awarded, but heartfelt)"}
+                  {locale === "it" ? "Michelin" : "Michelin"}
                 </p>
               </div>
               <hr className="border-white/10" />
