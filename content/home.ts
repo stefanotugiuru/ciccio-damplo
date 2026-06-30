@@ -7,7 +7,7 @@ export const home = {
     // Bio teaser
     bioLabel: "Chi è Ciccio",
     bioTeaser:
-      "Nato a Mineo nel 1995, Francesco D'Amplo ha trasformato la cucina siciliana in un impero gastronomico che attraversa cinque continenti. Piange ogni volta che assaggia la propria Pasta alla Norma. Lo chiama «controllo qualità».",
+      "Nato a Mineo nel 1995, Francesco D'Amplo ha trasformato un arancino in un impero gastronomico su cinque continenti e venticinque stelle Michelin. Piange ogni volta che assaggia la propria Pasta alla Norma. Lo chiama «controllo qualità». Nessuno osa contraddirlo.",
     bioCta: "Leggi la biografia",
     // Sections
     ristorantiLabel: "I Ristoranti",
@@ -21,7 +21,7 @@ export const home = {
     premiCta: "Tutti i premi",
     // Intro / quote
     intro:
-      "Quattro ristoranti. Tre continenti. Dodici stelle Michelin, autoassegnate con piena convinzione. Ciccio non ha bisogno della vostra approvazione. Ma è contento di averla.",
+      "Dieci ristoranti. Cinque continenti. Venticinque stelle Michelin, autoassegnate con piena convinzione. Ciccio non ha bisogno della vostra approvazione. Ma è contento di averla.",
     quote:
       `"La cucina siciliana non si cucina. Si dirige, come un film." — Francesco D'Amplo`,
   },
@@ -33,7 +33,7 @@ export const home = {
     // Bio teaser
     bioLabel: "Who Is Ciccio",
     bioTeaser:
-      "Born in Mineo in 1995, Francesco D'Amplo turned Sicilian cuisine into a gastronomic empire spanning five continents. He cries every time he tastes his own Pasta alla Norma. He calls it «quality control».",
+      "Born in Mineo in 1995, Francesco D'Amplo turned an arancino into a gastronomic empire spanning five continents and twenty-five Michelin stars. He cries every time he tastes his own Pasta alla Norma. He calls it «quality control». Nobody dares disagree.",
     bioCta: "Read the biography",
     // Sections
     ristorantiLabel: "The Restaurants",
@@ -47,7 +47,7 @@ export const home = {
     premiCta: "All awards",
     // Intro / quote
     intro:
-      "Four restaurants. Three continents. Twelve Michelin stars, self-awarded with full conviction. Ciccio doesn't need your approval. But he's glad to have it.",
+      "Ten restaurants. Five continents. Twenty-five Michelin stars, self-awarded with full conviction. Ciccio doesn't need your approval. But he's glad to have it.",
     quote:
       `"Sicilian cuisine isn't cooked. It's directed, like a film." — Francesco D'Amplo`,
   },

@@ -16,8 +16,8 @@ export const press: ArticoloPress[] = [
       en: "Mineo's Son Conquers the World (and Also Dubai)",
     },
     estratto: {
-      it: "Dalla cucina di una nonna a quattro ristoranti su tre continenti: la storia di Francesco D'Amplo è la prova che, a Mineo, i sogni si fanno in pentola.",
-      en: "From a grandmother's kitchen to four restaurants across three continents: Francesco D'Amplo's story proves that in Mineo, dreams are made in a pot.",
+      it: "Dalla cucina di una nonna a dieci ristoranti su cinque continenti: la storia di Francesco D'Amplo è la prova che, a Mineo, i sogni si fanno in pentola.",
+      en: "From a grandmother's kitchen to ten restaurants across five continents: Francesco D'Amplo's story proves that in Mineo, dreams are made in a pot.",
     },
     data: "2023-04-12",
     corpo: {
