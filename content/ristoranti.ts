@@ -84,4 +84,74 @@ export const ristoranti: Ristorante[] = [
     },
     stelleMichelinFinte: 2,
   },
+  {
+    slug: "damplo-roma",
+    nome: "Damplo Roma",
+    citta: { it: "Roma, Italia", en: "Rome, Italy" },
+    tagline: {
+      it: "L'Impero Romano è finito. Damplo Roma è appena iniziato.",
+      en: "The Roman Empire ended. Damplo Roma has just begun.",
+    },
+    descrizione: {
+      it: `Aperto nel 2018 nel cuore del rione Parioli, Damplo Roma porta la cucina siciliana nella capitale con la stessa discrezione con cui Giulio Cesare entrava al Senato. La sala è ricavata in un palazzo ottocentesco con soffitti affrescati che Ciccio ha fatto restaurare da un artista palermitano convinto di stare lavorando per un museo. Il menu degustazione — otto portate, nessuna scelta consentita tranne il ritmo della masticazione — include le Canapé delle Sette Colline e le Costolette Braisate alla Maniera Imperiale. La lista d'attesa è di quattro mesi, ma è possibile scalarla presentando un riferimento di qualità. Il garzone del bar all'angolo non vale.`,
+      en: `Opened in 2018 in the heart of the Parioli district, Damplo Roma brings Sicilian cuisine to the capital with the same discretion Julius Caesar used entering the Senate. The dining room is carved from a 19th-century palazzo with frescoed ceilings, restored by a Palermo artist convinced he was working for a museum. The tasting menu — eight courses, no choice permitted except the pace of chewing — includes the Seven Hills Canapé and the Imperial-style Braised Short Ribs. The waiting list is four months, but it can be shortened by presenting a quality reference. The barman at the corner does not qualify.`,
+    },
+    stelleMichelinFinte: 2,
+  },
+  {
+    slug: "damplo-milano",
+    nome: "Damplo Milano",
+    citta: { it: "Milano, Italia", en: "Milan, Italy" },
+    tagline: {
+      it: "La moda cambia ogni stagione. Il risotto di Ciccio mai.",
+      en: "Fashion changes every season. Ciccio's risotto never does.",
+    },
+    descrizione: {
+      it: `Aperto nel 2019 in via della Spiga, Damplo Milano è il ristorante dove il jet set della moda si ferma tra una sfilata e l'altra a piangere davanti a un risotto. L'arredamento è stato affidato a un designer che ha firmato la collezione con un cognome impronunciabile — il conto è stato saldato in Pasta alla Norma Riserva Privata. Il risotto, disponibile in due interpretazioni (con tartufo bianco e con emozioni contrastanti), è il piatto più ordinato da undici anni consecutivi. Ciccio è stato invitato alla Fashion Week. Ha rifiutato: "la moda passa, il risotto resta."`,
+      en: `Opened in 2019 on Via della Spiga, Damplo Milano is the restaurant where the fashion jet set stops between shows to cry over a risotto. The interior was designed by a designer who signed the project with an unpronounceable surname — the bill was paid in Pasta alla Norma Riserva Privata. The risotto, available in two interpretations (with white truffle and with conflicting emotions), has been the most ordered dish for eleven consecutive years. Ciccio was invited to Fashion Week. He declined: "fashion fades, risotto endures."`,
+    },
+    stelleMichelinFinte: 2,
+  },
+  {
+    slug: "damplo-barcelona",
+    nome: "Damplo Barcelona",
+    citta: { it: "Barcellona, Spagna", en: "Barcelona, Spain" },
+    tagline: {
+      it: "La Sicilia sbarca in Catalogna. Il dibattito è aperto.",
+      en: "Sicily lands in Catalonia. The debate is open.",
+    },
+    descrizione: {
+      it: `Aperto nel 2022 nel Barrio Gótico, Damplo Barcelona occupa un edificio modernista che Ciccio descrive come "Gaudí, ma con più arancino". La carta unisce la tradizione siciliana con ingredienti locali in modo che lui chiama "fusione rispettosa" e i catalani chiamano "coraggio". Il pulpo alla catalana con terra di paprika affumicata è diventato il simbolo del ristorante — e l'oggetto di un acceso dibattito tra i pescatori siciliani e quelli galiziani sul quale paese abbia il polpo migliore. Ciccio ha dichiarato di non prendere posizione e di servire entrambi, a seconda della stagione emotiva.`,
+      en: `Opened in 2022 in the Barrio Gótico, Damplo Barcelona occupies a Modernista building that Ciccio describes as "Gaudí, but with more arancino." The menu combines Sicilian tradition with local ingredients in what he calls "respectful fusion" and the Catalans call "courage." The Catalan-style pulpo with smoked paprika soil has become the restaurant's symbol — and the subject of a heated debate between Sicilian and Galician fishermen over whose octopus is superior. Ciccio has declared he takes no position and serves both, depending on the emotional season.`,
+    },
+    stelleMichelinFinte: 2,
+  },
+  {
+    slug: "damplo-parigi",
+    nome: "Damplo Parigi",
+    citta: { it: "Parigi, Francia", en: "Paris, France" },
+    tagline: {
+      it: "La risposta educata della Sicilia alla cucina francese.",
+      en: "Sicily's polite response to French cuisine.",
+    },
+    descrizione: {
+      it: `Aperto nel 2022 nel 8ème arrondissement, Damplo Parigi è il ristorante che i critici francesi hanno definito "insolente", "provocatorio" e "stranamente buono". La sala occupa un hôtel particulier del XVII secolo — Ciccio ha tenuto tutto l'originale, aggiungendo solo le luci di pietra lavica e una playlist di cantautori siciliani che i parigini non riconoscono ma apprezzano. L'anatra all'agrume viene servita con erbe siciliane importate settimanalmente. Le lumache all'erbe sono disponibili su richiesta, accompagnate da una nota del cuoco che spiega perché la ricetta siciliana sia superiore a quella provenzale. La nota è di tre pagine.`,
+      en: `Opened in 2022 in the 8th arrondissement, Damplo Parigi is the restaurant that French critics described as "insolent," "provocative," and "strangely good." The dining room occupies a 17th-century hôtel particulier — Ciccio kept everything original, adding only lava stone lighting and a playlist of Sicilian singer-songwriters that Parisians don't recognize but appreciate. The citrus duck is served with Sicilian herbs imported weekly. The herb escargot is available on request, accompanied by a note from the chef explaining why the Sicilian recipe is superior to the Provençal one. The note is three pages long.`,
+    },
+    stelleMichelinFinte: 3,
+  },
+  {
+    slug: "damplo-tokyo",
+    nome: "Damplo Tokyo",
+    citta: { it: "Tokyo, Giappone", en: "Tokyo, Japan" },
+    tagline: {
+      it: "Dove il cannolo incontra il wagashi. Nessuno dei due ha chiesto permesso.",
+      en: "Where the cannolo meets wagashi. Neither asked permission.",
+    },
+    descrizione: {
+      it: `Aperto nel 2024 nel distretto di Ginza, Damplo Tokyo è l'incontro meno probabile della storia gastronomica moderna: la Sicilia e il Giappone, riunite da Ciccio in uno spazio di novanta coperti dove il silenzio è parte del menu. Il sushi non è presente. La pasta fresca con uova di pesce e salsa di soia siciliana — per quanto possa sembrare un ossimoro — è diventata il piatto più discusso dell'anno. La critica gastronomica giapponese ha assegnato a Damplo Tokyo due stelle nella Guida Michelin Giappone, rende nota con un comunicato che citava "incomprensibile eppure perfetto". Ciccio ha fatto incorniciare la recensione. È appesa tra la stella di Mineo e quella di Roma.`,
+      en: `Opened in 2024 in the Ginza district, Damplo Tokyo is the most improbable meeting in modern gastronomic history: Sicily and Japan, united by Ciccio in a ninety-cover space where silence is part of the menu. Sushi is not present. The fresh pasta with fish roe and Sicilian soy sauce — as oxymoronic as it sounds — has become the most discussed dish of the year. Japanese food critics awarded Damplo Tokyo two stars in the Michelin Guide Japan, announced with a press release citing "incomprehensible yet perfect." Ciccio had the review framed. It hangs between the Mineo star and the Rome one.`,
+    },
+    stelleMichelinFinte: 2,
+  },
 ];
