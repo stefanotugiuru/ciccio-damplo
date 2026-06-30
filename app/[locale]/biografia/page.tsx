@@ -21,18 +21,14 @@ export async function generateMetadata({
   });
 }
 
-// Solo foto di Ciccio da solo, nell'ordine narrativo della bio
+// 6 foto specifiche richieste dall'utente
 const bioPhotos = [
-  { src: "/images/galleria/ciccio-che-cucina.png",           altIt: "Ciccio in cucina", altEn: "Ciccio in the kitchen" },
-  { src: "/images/galleria/ciccio-che-da-classe-di-cucina.png", altIt: "Ciccio che insegna cucina", altEn: "Ciccio teaching cooking" },
+  { src: "/images/galleria/best-sicilian-chef.png",          altIt: "Premio Best Sicilian Chef", altEn: "Best Sicilian Chef Award" },
+  { src: "/images/galleria/ciccio-che-da-classe-di-cucina.png", altIt: "Ciccio che tiene una cooking class", altEn: "Ciccio teaching a cooking class" },
   { src: "/images/galleria/ciccio-masterchef.png",           altIt: "Ciccio a MasterChef", altEn: "Ciccio at MasterChef" },
-  { src: "/images/galleria/best-sicilian-chef.png",          altIt: "Ciccio con il premio", altEn: "Ciccio with the award" },
-  { src: "/images/galleria/ciccio-nel-suo-ufficio.png",      altIt: "Ciccio nel suo ufficio", altEn: "Ciccio in his office" },
-  { src: "/images/galleria/ciccio-con-ferrari-ristorante.png", altIt: "Ciccio davanti al ristorante", altEn: "Ciccio outside the restaurant" },
-  { src: "/images/galleria/ciccio-in-yatch.png",             altIt: "Ciccio sul suo yacht", altEn: "Ciccio on his yacht" },
-  { src: "/images/galleria/ciccio-tiro-al-piattello.png",    altIt: "Ciccio a tiro al piattello", altEn: "Ciccio clay shooting" },
-  { src: "/images/galleria/ciccio-nel-vigneto.png",          altIt: "Ciccio nel vigneto", altEn: "Ciccio in the vineyard" },
-  { src: "/images/galleria/ciccio-nella-cantina-damplo.png", altIt: "Ciccio nella cantina", altEn: "Ciccio in the cellar" },
+  { src: "/images/galleria/ciccio-nella-cantina-damplo.png", altIt: "Ciccio nella cantina Damplo", altEn: "Ciccio in the Damplo cellar" },
+  { src: "/images/galleria/ciccio-nel-vigneto.png",          altIt: "Ciccio nel vigneto di Mineo", altEn: "Ciccio in the Mineo vineyard" },
+  { src: "/images/galleria/ciccio-con-ferrari-ristorante.png", altIt: "Ciccio con la Ferrari davanti a Damplo Mineo", altEn: "Ciccio with the Ferrari outside Damplo Mineo" },
 ];
 
 export default async function BiografiaPage({
@@ -113,8 +109,8 @@ export default async function BiografiaPage({
             </div>
           </article>
 
-          {/* ── COLONNA FOTO (destra) ── */}
-          <aside className="order-1 md:order-2 md:col-span-5">
+          {/* ── COLONNA FOTO (destra, solo desktop) ── */}
+          <aside className="order-1 hidden md:order-2 md:col-span-5 md:block">
             <div className="space-y-4">
               {bioPhotos.map((foto, i) => (
                 <RevealOnScroll key={foto.src} delay={Math.min(i * 0.05, 0.3)}>

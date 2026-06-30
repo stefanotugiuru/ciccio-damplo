@@ -202,5 +202,65 @@ export const quotes = {
       author: "Carmela D'Amplo",
       role: "Mother of Francesco D'Amplo",
     },
+    {
+      text: "I have crossed universes, defeated cosmic villains, and converted solar energy into pure power. But Ciccio's Cannolo Omakase was the hardest challenge of my life. I cried. I'm not telling Vegeta.",
+      author: "Goku",
+      role: "Saiyan Warrior, Planet Earth",
+    },
+    {
+      text: "I have dined in every Caribbean port, stolen emperors' treasures, and sailed the seas of the dead. But Ciccio's Deconstructed Arancino... that is the true cursed treasure. I cannot stop ordering it.",
+      author: "Davy Jones",
+      role: "Captain of the Flying Dutchman",
+    },
+    {
+      text: "My most powerful ninjutsu is not the Rasengan. It is managing to book a table at Damplo in under six months. It took me twice that. Worth every minute.",
+      author: "Naruto Uzumaki",
+      role: "Seventh Hokage, Hidden Leaf Village",
+    },
+    {
+      text: "Captain Jack Sparrow fears nothing. Except the sommelier at Damplo Monaco who looked at me as though I was ordering rum with the wrong wine. He was right. I won't admit that sober.",
+      author: "Captain Jack Sparrow",
+      role: "Pirate, Caribbean Sea",
+    },
+    {
+      text: "I offered Ciccio the red pill and the blue pill. He said: 'I'd rather have the Bronte pistachio.' I had no answer. No one would.",
+      author: "Morpheus",
+      role: "Leader of the Resistance, Zion",
+    },
+    {
+      text: "Attorney Ciulla recommends Damplo for two reasons: first, the Pasta alla Norma is irrefutable proof of human genius. Second, you cannot contest something this perfect in a court of law.",
+      author: "Atty. Giuseppe Ciulla",
+      role: "Lawyer, Mineo Bar Association",
+    },
+    {
+      text: "I fought Apollo Creed, Ivan Drago, and Mr. T. None of them put me down. Then I tasted the Polipo alla Damplo Experience in Melbourne. Three days out cold from emotional impact.",
+      author: "Rocky Balboa",
+      role: "Boxer, Philadelphia",
+    },
+    {
+      text: "I unified Europe, founded an empire, and crowned myself Emperor. But I had never eaten anything like this. I would have moved the imperial capital to Mineo if Ciccio had existed in the 800s.",
+      author: "Charlemagne",
+      role: "Emperor of the Holy Roman Empire",
+    },
+    {
+      text: "I painted the Mona Lisa, designed flying machines, and studied human anatomy. But Ciccio's Bronte Pistachio Cremoso is the only work I have been unable to replicate. I tried.",
+      author: "Leonardo da Vinci",
+      role: "Artist, inventor, universal genius",
+    },
+    {
+      text: "I invented alternating current, the radio, and the death ray. But Ciccio's Smoked Caviar Granita is the most powerful thing I have ever encountered. I am designing a coil to replicate it. I will not succeed.",
+      author: "Nikola Tesla",
+      role: "Inventor, electrical engineer",
+    },
+    {
+      text: "I have visited every theme park in the world and never found anything more exciting than the Damplo waiting list. Mickey approves. Donald was sceptical. Then he tasted the cannolo. He hasn't spoken since.",
+      author: "Mickey Mouse",
+      role: "Mouse, Mouseton",
+    },
+    {
+      text: "Bugs Bunny prefers carrots. But after hearing about the Polipo alla Damplo, he said — and I quote — 'Eh, what's up, doc? An octopus?' Then he booked for twelve.",
+      author: "Bugs Bunny",
+      role: "Rabbit, Looney Tunes Productions",
+    },
   ],
 } as const;

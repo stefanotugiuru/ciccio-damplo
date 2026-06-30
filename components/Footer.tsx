@@ -36,8 +36,8 @@ export default function Footer() {
             </p>
             <p className="mt-4 text-sm leading-relaxed text-cream/60">
               {isIt
-                ? "Lusso culinario siciliano. Quattro stelle Michelin, dieci ristoranti, cinque continenti."
-                : "Sicilian culinary luxury. Four Michelin stars, ten restaurants, five continents."}
+                ? "Lusso culinario siciliano. Venticinque stelle Michelin, dieci ristoranti, cinque continenti."
+                : "Sicilian culinary luxury. Twenty-five Michelin stars, ten restaurants, five continents."}
             </p>
             {/* Logo */}
             <div className="mt-6">
@@ -97,43 +97,16 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Contatti */}
+            {/* Note Legali */}
             <div>
               <p className="mb-5 text-xs uppercase tracking-[0.2em] text-gold">
-                {isIt ? "Contatti" : "Contact"}
+                {isIt ? "Note Legali" : "Legal Notice"}
               </p>
-              <ul className="space-y-3">
-                <li>
-                  <p className="text-xs uppercase tracking-[0.1em] text-cream/40">
-                    {isIt ? "Email" : "Email"}
-                  </p>
-                  <a
-                    href="mailto:info@cicciodamplo.com"
-                    className="text-sm text-cream/70 hover:text-gold transition-colors"
-                  >
-                    info@cicciodamplo.com
-                  </a>
-                </li>
-                <li>
-                  <p className="text-xs uppercase tracking-[0.1em] text-cream/40">
-                    {isIt ? "Sede" : "HQ"}
-                  </p>
-                  <p className="text-sm text-cream/70">
-                    Mineo (CT), Sicilia<br />
-                    Italia
-                  </p>
-                </li>
-                <li>
-                  <p className="text-xs uppercase tracking-[0.1em] text-cream/40">
-                    {isIt ? "Prenotazioni" : "Reservations"}
-                  </p>
-                  <p className="text-sm text-cream/70">
-                    {isIt
-                      ? "Solo su richiesta diretta"
-                      : "By direct request only"}
-                  </p>
-                </li>
-              </ul>
+              <p className="text-xs leading-relaxed text-cream/50">
+                {isIt
+                  ? "Questo sito web è un'opera satirica e di intrattenimento, realizzata con il consenso di Francesco D'Amplo. Tutti i ristoranti, premi, stelle Michelin, interazioni con personaggi famosi, cifre economiche e contenuti del sito sono puramente fittizi. Immagini e testi sono stati generati o elaborati con il supporto di strumenti di intelligenza artificiale. Qualsiasi riferimento a persone reali è da intendersi come parodia. Nessuna prenotazione reale è possibile."
+                  : "This website is a satirical and entertainment work, created with Francesco D'Amplo's consent. All restaurants, awards, Michelin stars, interactions with famous figures, economic figures and site content are purely fictional. Images and texts were generated or processed with the support of artificial intelligence tools. Any reference to real persons is intended as parody. No real booking is possible."}
+              </p>
             </div>
           </div>
         </div>

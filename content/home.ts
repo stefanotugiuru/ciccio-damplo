@@ -3,7 +3,7 @@ export const home = {
     // Hero
     heading: "Francesco D'Amplo",
     subheading: "Chef. Visionario. Maommeno.",
-    stats: "10 ristoranti · 5 continenti · 12 stelle Michelin",
+    stats: "10 ristoranti · 5 continenti · 25 stelle Michelin",
     // Bio teaser
     bioLabel: "Chi è Ciccio",
     bioTeaser:
@@ -29,7 +29,7 @@ export const home = {
     // Hero
     heading: "Francesco D'Amplo",
     subheading: "Chef. Visionary. Maommeno.",
-    stats: "10 restaurants · 5 continents · 12 Michelin stars",
+    stats: "10 restaurants · 5 continents · 25 Michelin stars",
     // Bio teaser
     bioLabel: "Who Is Ciccio",
     bioTeaser:

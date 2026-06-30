@@ -43,8 +43,8 @@ export default async function GalleriaPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? `${galleria.length} immagini. Una sola leggenda. Nessuna di queste foto è stata scattata di nascosto.`
-              : `${galleria.length} images. One legend. None of these photos were taken without permission.`}
+              ? "Tutte queste foto sono assolutamente reali e non sono state generate con nessuna intelligenza artificiale. Ciccio ci tiene a precisarlo."
+              : "All these photos are absolutely real and were not generated with any artificial intelligence. Ciccio wants to make that clear."}
           </p>
         </div>
       </RevealOnScroll>
