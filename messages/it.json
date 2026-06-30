@@ -10,10 +10,9 @@
     "langSwitch": "EN"
   },
   "footer": {
-    "disclaimer": "Questo è un sito web fittizio e satirico, creato per scopi di intrattenimento con il consenso di Francesco.",
-    "rights": "Tutti i diritti (im)moralmente riservati."
+    "brand": "Damplo Group"
   },
   "meta": {
-    "defaultDescription": "Francesco D'Amplo, detto Ciccio Damplo: chef siciliano, fondatore di 4 ristoranti su 3 continenti, titolare di 12 stelle Michelin autoassegnate. Il lusso culinario siciliano, decostruito e rivalutato."
+    "defaultDescription": "Francesco D'Amplo, detto Ciccio Damplo: chef siciliano di fama internazionale, fondatore del Damplo Group. Dieci ristoranti su cinque continenti, quattro stelle Michelin."
   }
 }
