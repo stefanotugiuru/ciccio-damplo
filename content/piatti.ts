@@ -508,16 +508,16 @@ export const piatti: Piatto[] = [
   },
   {
     slug: "schiacciamo-pane-carasau",
-    nome: "Schiacciamo — Pane Carasau Originale (Versione Pre-Schiacciamento)",
+    nome: "Foglio d'Oro — Cialda di Pietra Lavica con Tapenade di Olive Nocellara e Burrata di Giornata",
     sottotitoloIronico: {
-      it: "Prima che Ciccio ci mettesse le mani sopra.",
-      en: "Before Ciccio got his hands on it.",
+      it: "Non è pane. Non è un antipasto. È un'intenzione.",
+      en: "It's not bread. It's not a starter. It's an intention.",
     },
     descrizione: {
-      it: `Esiste una versione dello Schiacciamo che precede il torchio, i sedici strati e la salsa al nero di seppia. Questa è quella versione. Pane carasau sardo di alta qualità, condito con olio extravergine della vigna privata di Mineo, ricotta salata di Ragusa e una spolverata di origano dell'Etna. Ciccio lo mangiava in cucina durante i test dello Schiacciamo ufficiale, tra una prova e l'altra, e non aveva intenzione di metterlo in menu. "È troppo semplice," diceva. Poi qualcuno del personale lo ha visto, lo ha assaggiato e ha chiesto se poteva ordinarlo. Ciccio ha risposto di no. Il piatto è in menu da tre settimane.`,
-      en: `There exists a version of the Schiacciamo that predates the press, the sixteen layers and the cuttlefish ink sauce. This is that version. High-quality Sardinian carasau bread, dressed with extra virgin oil from the private Mineo vineyard, Ragusa salted ricotta and a dusting of Etna oregano. Ciccio ate it in the kitchen during testing for the official Schiacciamo, between rounds, with no intention of putting it on the menu. "It's too simple," he said. Then someone on staff saw it, tasted it and asked if they could order it. Ciccio said no. The dish has been on the menu for three weeks.`,
+      it: `Una cialda croccante di semola di grano duro siciliano cotta su pietra lavica dell'Etna a trecentosessanta gradi per novanta secondi esatti — il tempo, dice Ciccio, "necessario perché la pietra trasmetta il carattere del vulcano alla farina." Sulla cialda viene adagiata una tapenade di olive Nocellara del Belice macinate a freddo con capperi di Pantelleria, acciughe di Sciacca e una goccia di olio della vigna privata. Al centro, una quenelle di burrata di Giornata proveniente da un caseificio di Ragusa che produce solo il martedì e il giovedì — "gli altri giorni il casaro pensa," spiega Ciccio, senza specificare se sia un pregio o una preoccupazione. Il piatto si mangia in un solo gesto. Ciccio raccomanda di non tagliarlo. "Spezzarlo è parte della comprensione del piatto." Chi usa il coltello viene guardato con disappunto. Non succede una seconda volta.`,
+      en: `A crispy disc of Sicilian durum wheat semolina cooked on Etna lava stone at three hundred and sixty degrees for exactly ninety seconds — the time, says Ciccio, "required for the stone to transmit the character of the volcano to the flour." On the disc is placed a cold-ground Nocellara del Belice olive tapenade with Pantelleria capers, Sciacca anchovies and a drop of private vineyard oil. At the centre, a quenelle of same-day burrata from a dairy in Ragusa that produces only on Tuesdays and Thursdays — "the other days the cheesemaker thinks," Ciccio explains, without specifying whether this is a virtue or a concern. The dish is eaten in a single gesture. Ciccio recommends against cutting it. "Breaking it is part of understanding the dish." Those who use a knife are looked at with disapproval. It doesn't happen a second time.`,
     },
-    prezzoAssurdo: { it: "€ 38 — la semplicità ha un prezzo ragionevole", en: "€38 — simplicity is reasonably priced" },
+    prezzoAssurdo: { it: "€ 65 — il disappunto è gratuito", en: "€65 — the disapproval is complimentary" },
     ristoranteOrigine: "damplo-mineo",
   },
   {
