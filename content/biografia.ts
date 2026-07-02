@@ -38,7 +38,7 @@ export const biografia = {
         titolo: "L'Europa e New York",
         paragrafi: [
           "Ai ventisette anni, l'Europa intera. Barcellona, Monaco, Parigi — tre ristoranti in un anno, tre Paesi convinti che la cucina siciliana fosse la risposta a domande che non si erano ancora posti. A Monaco aprì con vista sul porto degli yacht. A Parigi aprì il ristorante che lui descrive come 'la risposta educata della Sicilia alla cucina francese.'",
-          "Ai ventotto anni, New York. 'Manhattan si aspettava tutto,' dichiarò Ciccio durante l'inaugurazione, 'tranne Mineo.' La lista d'attesa superò i sei mesi nel primo trimestre.",
+          "Ai ventotto anni, New York e — nella mossa più imprevedibile della sua carriera — Marghera. Un ex capannone portuale a due passi da Venezia, convertito in ristorante con vista sul porto industriale. I critici avevano riso. La Guida Michelin assegnò cinque stelle al primo anno. I critici smisero di ridere.",
         ],
       },
       {
@@ -98,7 +98,7 @@ export const biografia = {
         titolo: "Europe and New York",
         paragrafi: [
           "At twenty-seven, all of Europe. Barcelona, Monaco, Paris — three restaurants in a year, three countries convinced that Sicilian cuisine was the answer to questions they hadn't yet thought to ask. In Monaco he opened overlooking the yacht harbour. In Paris he opened the restaurant he describes as 'Sicily's polite response to French cuisine.'",
-          "At twenty-eight, New York. 'Manhattan was expecting everything,' Ciccio declared at the inauguration, 'except Mineo.' The waiting list exceeded six months in the first quarter.",
+          "At twenty-eight, New York and — in the most unpredictable move of his career — Marghera. A former port warehouse steps from Venice, converted into a restaurant overlooking the industrial harbour. The critics laughed. The Michelin Guide awarded five stars in the first year. The critics stopped laughing.",
         ],
       },
       {

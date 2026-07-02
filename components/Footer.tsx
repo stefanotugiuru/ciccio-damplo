@@ -14,6 +14,7 @@ const ristoranti = [
   { slug: "damplo-barcelona",   nome: "Damplo Barcelona",  citta: "Barcellona" },
   { slug: "damplo-parigi",      nome: "Damplo Paris",      citta: "Parigi" },
   { slug: "damplo-tokyo",       nome: "Damplo Tokyo",      citta: "Tokyo" },
+  { slug: "damplo-marghera",    nome: "Damplo Marghera",   citta: "Marghera, Venezia" },
 ];
 
 export default function Footer() {
@@ -36,8 +37,8 @@ export default function Footer() {
             </p>
             <p className="mt-4 text-sm leading-relaxed text-cream/60">
               {isIt
-                ? "Lusso culinario siciliano. Venticinque stelle Michelin, dieci ristoranti, cinque continenti."
-                : "Sicilian culinary luxury. Twenty-five Michelin stars, ten restaurants, five continents."}
+                ? "Lusso culinario siciliano. Venticinque stelle Michelin, undici ristoranti, cinque continenti."
+                : "Sicilian culinary luxury. Twenty-five Michelin stars, eleven restaurants, five continents."}
             </p>
             {/* Logo */}
             <div className="mt-6">

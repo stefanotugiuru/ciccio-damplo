@@ -132,7 +132,7 @@ export default async function BiografiaPage({
         <RevealOnScroll>
           <div className="mt-20 grid grid-cols-2 gap-4 border-t border-white/10 pt-16 md:grid-cols-4">
             {[
-              { n: "10", label: locale === "it" ? "Ristoranti" : "Restaurants" },
+              { n: "11", label: locale === "it" ? "Ristoranti" : "Restaurants" },
               { n: "5", label: locale === "it" ? "Continenti" : "Continents" },
               { n: "★★★", label: locale === "it" ? "Stelle Michelin" : "Michelin Stars" },
               { n: "18+", label: locale === "it" ? "Premi" : "Awards" },

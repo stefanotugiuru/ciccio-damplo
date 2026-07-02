@@ -71,6 +71,20 @@ export const ristoranti: Ristorante[] = [
     stelleMichelinFinte: 2,
   },
   {
+    slug: "damplo-marghera",
+    nome: "Damplo Marghera",
+    citta: { it: "Marghera, Venezia", en: "Marghera, Venice" },
+    tagline: {
+      it: "Venezia ha i canali. Marghera ha Ciccio.",
+      en: "Venice has the canals. Marghera has Ciccio.",
+    },
+    descrizione: {
+      it: `Aperto nel 2023 nel cuore industriale di Marghera — a due passi da Venezia, in un ex capannone portuale convertito in tempio gastronomico — Damplo Marghera è la scommessa più controcorrente di Ciccio: portare il lusso siciliano nell'unico posto in cui nessuno se lo aspettava. Il capannone, risalente al 1931, è stato ristrutturato dall'architetto Luca Fabbri di Venezia con l'obiettivo di "rendere l'industriale poetico." Ciccio ha aggiunto: "E il poetico costoso." Il risultato è una sala da ottanta coperti con travi a vista originali, pietra lavica sul pavimento importata dall'Etna e finestre che si affacciano sul porto industriale — una vista che Ciccio descrive come "il tramonto più onesto d'Italia." La Guida Michelin ha assegnato cinque stelle al primo anno, un record assoluto per un ristorante italiano. La commissione aveva definito il locale "inaspettato, insolente e perfetto." Ciccio ha stampato la recensione su mille tovaglioli.`,
+      en: `Opened in 2023 in the industrial heart of Marghera — a stone's throw from Venice, in a former port warehouse converted into a gastronomic temple — Damplo Marghera is Ciccio's most counter-current bet: bringing Sicilian luxury to the one place nobody expected it. The warehouse, dating from 1931, was restructured by Venetian architect Luca Fabbri with the aim of "making the industrial poetic." Ciccio added: "And the poetic expensive." The result is an eighty-cover dining room with original exposed beams, Etna lava stone flooring, and windows overlooking the industrial harbour — a view Ciccio describes as "the most honest sunset in Italy." The Michelin Guide awarded five stars in the first year, an absolute record for an Italian restaurant. The commission had described the venue as "unexpected, insolent, and perfect." Ciccio had the review printed on a thousand napkins.`,
+    },
+    stelleMichelinFinte: 5,
+  },
+  {
     slug: "damplo-melbourne",
     nome: "Damplo Melbourne",
     citta: { it: "Melbourne, Australia", en: "Melbourne, Australia" },
