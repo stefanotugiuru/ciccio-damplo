@@ -171,8 +171,12 @@ export default async function HomePage({
           </div>
         </RevealOnScroll>
 
+        {(() => {
+          const slugsHome = ["paixa-cu-sugu-damplo-marghera", "schiacciamo-damplo-marghera", "moemmeno-damplo-marghera", "arancino-decostruito"];
+          const piattiHome = slugsHome.map(slug => piatti.find(p => p.slug === slug)).filter(Boolean) as typeof piatti;
+          return (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {piatti.slice(0, 4).map((p, index) => (
+          {piattiHome.map((p, index) => (
             <RevealOnScroll key={p.slug} delay={Math.min(index, 2) * 0.08}>
               <a
                 href={`${BASE_PATH}/${locale}/piatti/${p.slug}/`}
@@ -197,6 +201,8 @@ export default async function HomePage({
             </RevealOnScroll>
           ))}
         </div>
+          );
+        })()}
       </section>
 
       {/* ── 5. PRESS QUOTES ─────────────────────────────────────────── */}

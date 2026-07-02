@@ -37,8 +37,8 @@ export default function Footer() {
             </p>
             <p className="mt-4 text-sm leading-relaxed text-cream/60">
               {isIt
-                ? "Lusso culinario siciliano. Venticinque stelle Michelin, undici ristoranti, cinque continenti."
-                : "Sicilian culinary luxury. Twenty-five Michelin stars, eleven restaurants, five continents."}
+                ? "Lusso culinario siciliano. Trenta stelle Michelin, undici ristoranti, cinque continenti."
+                : "Sicilian culinary luxury. Thirty Michelin stars, eleven restaurants, five continents."}
             </p>
             {/* Logo */}
             <div className="mt-6">

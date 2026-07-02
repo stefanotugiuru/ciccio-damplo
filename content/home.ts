@@ -3,7 +3,7 @@ export const home = {
     // Hero
     heading: "Francesco D'Amplo",
     subheading: "Chef. Visionario. Maommeno.",
-    stats: "11 ristoranti · 5 continenti · 25 stelle Michelin",
+    stats: "11 ristoranti · 5 continenti · 30 stelle Michelin",
     // Bio teaser
     bioLabel: "Chi è Ciccio",
     bioTeaser:
@@ -21,7 +21,7 @@ export const home = {
     premiCta: "Tutti i premi",
     // Intro / quote
     intro:
-      "Undici ristoranti. Cinque continenti. Venticinque stelle Michelin, autoassegnate con piena convinzione. Ciccio non ha bisogno della vostra approvazione. Ma è contento di averla.",
+      "Undici ristoranti. Cinque continenti. Trenta stelle Michelin, autoassegnate con piena convinzione. Ciccio non ha bisogno della vostra approvazione. Ma è contento di averla.",
     quote:
       `"La cucina siciliana non si cucina. Si dirige, come un film." — Francesco D'Amplo`,
   },
@@ -29,7 +29,7 @@ export const home = {
     // Hero
     heading: "Francesco D'Amplo",
     subheading: "Chef. Visionary. Maommeno.",
-    stats: "11 restaurants · 5 continents · 25 Michelin stars",
+    stats: "11 restaurants · 5 continents · 30 Michelin stars",
     // Bio teaser
     bioLabel: "Who Is Ciccio",
     bioTeaser:
@@ -47,7 +47,7 @@ export const home = {
     premiCta: "All awards",
     // Intro / quote
     intro:
-      "Eleven restaurants. Five continents. Twenty-five Michelin stars, self-awarded with full conviction. Ciccio doesn't need your approval. But he's glad to have it.",
+      "Eleven restaurants. Five continents. Thirty Michelin stars, self-awarded with full conviction. Ciccio doesn't need your approval. But he's glad to have it.",
     quote:
       `"Sicilian cuisine isn't cooked. It's directed, like a film." — Francesco D'Amplo`,
   },

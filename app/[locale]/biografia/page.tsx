@@ -134,7 +134,7 @@ export default async function BiografiaPage({
             {[
               { n: "11", label: locale === "it" ? "Ristoranti" : "Restaurants" },
               { n: "5", label: locale === "it" ? "Continenti" : "Continents" },
-              { n: "★★★", label: locale === "it" ? "Stelle Michelin" : "Michelin Stars" },
+              { n: "30", label: locale === "it" ? "Stelle Michelin" : "Michelin Stars" },
               { n: "18+", label: locale === "it" ? "Premi" : "Awards" },
             ].map((stat) => (
               <div key={stat.n} className="text-center">

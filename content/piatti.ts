@@ -508,16 +508,16 @@ export const piatti: Piatto[] = [
   },
   {
     slug: "moemmeno-damplo-marghera",
-    nome: "Maommeno — Il Dessert Che Ciccio Non Voleva Inserire in Menu",
+    nome: "Maommeno — Pasta Decostruita alla Siciliana con Ragù di Porto",
     sottotitoloIronico: {
       it: "Ha resistito tre mesi. Poi i clienti hanno iniziato a chiederlo.",
       en: "He held out for three months. Then guests started asking for it.",
     },
     descrizione: {
-      it: `"Maommeno" in siciliano significa "ma anche meno" — un'espressione di rassegnazione affettuosa verso le aspettative altrui. Ciccio lo ha definito "troppo semplice per un ristorante come il mio" durante i test, poi lo ha inserito in menu tre mesi dopo l'apertura perché quarantasette clienti lo avevano richiesto dopo aver sentito dello chef che lo mangiava in cucina tra un turno e l'altro. Il piatto: semifreddo al pistacchio di Bronte DOP, cuore liquido di cioccolato fondente al 72% di Modica, granella di mandorle tostate di Avola e un filo di olio della vigna. Servito in una coppetta di ceramica di Caltagirone decorata a mano. "Maommeno," dice Ciccio quando lo porta lui stesso al tavolo. "È comunque buono."`,
-      en: `"Maommeno" in Sicilian means "but also less" — an expression of affectionate resignation toward others' expectations. Ciccio described it as "too simple for a restaurant like mine" during testing, then added it to the menu three months after opening because forty-seven guests had specifically requested it after hearing about the chef eating it alone in the kitchen between shifts. The dish: Bronte DOP pistachio semifreddo, liquid 72% Modica dark chocolate centre, toasted Avola almond crumble and a thread of vineyard oil. Served in a hand-decorated Caltagirone ceramic cup. "Maommeno," says Ciccio when he brings it to the table himself. "It's still good."`,
+      it: `"Maommeno" in siciliano significa "ma anche meno" — un'espressione di rassegnazione affettuosa verso le aspettative altrui, e anche il commento che Ciccio fa ogni volta che porta il piatto: "Maommeno, è una pasta." È una pasta decostruita: le componenti della tradizionale pasta al ragù siciliano vengono separate e presentate in tre composizioni distinte sullo stesso piatto. Il ragù di maiale nero dei Nebrodi — cotto per dodici ore nel fondo di vino della vigna di Mineo — viene servito freddo in una spuma aerata. La pasta fresca, sfarinata e ricostruita in cristalli di semola soffiata, viene presentata accanto. Il condimento viene applicato con un contagocce di pietra. "Ho decostruito la pasta fino a farla sembrare altro," spiega Ciccio. "Poi l'ho riassemblata per farla sembrare di nuovo pasta. È un viaggio inutile ma necessario." Il piatto è nel menu da quando quarantasette clienti lo hanno richiesto dopo aver visto Ciccio mangiarselo da solo in cucina tra un turno e l'altro.`,
+      en: `"Maommeno" in Sicilian means "but also less" — an expression of affectionate resignation toward others' expectations, and also the comment Ciccio makes every time he brings the dish: "Maommeno, it's a pasta." It is a deconstructed pasta: the components of the traditional Sicilian pasta al ragù are separated and presented in three distinct compositions on the same plate. The Nebrodi black pork ragù — cooked for twelve hours in Mineo vineyard wine — is served cold as an aerated foam. The fresh pasta, broken down and rebuilt as blown semolina crystals, is presented alongside. The dressing is applied with a stone dropper. "I deconstructed the pasta until it looked like something else," Ciccio explains. "Then I reassembled it to make it look like pasta again. It's a pointless but necessary journey." The dish has been on the menu since forty-seven guests requested it after seeing Ciccio eating it alone in the kitchen between shifts.`,
     },
-    prezzoAssurdo: { it: "€ 42 — la rassegnazione di Ciccio è gratuita", en: "€42 — Ciccio's resignation is complimentary" },
+    prezzoAssurdo: { it: "€ 135 — il viaggio inutile è incluso", en: "€135 — the pointless journey is included" },
     ristoranteOrigine: "damplo-marghera",
   },
 ];
