@@ -507,6 +507,20 @@ export const piatti: Piatto[] = [
     ristoranteOrigine: "damplo-marghera",
   },
   {
+    slug: "schiacciamo-pane-carasau",
+    nome: "Schiacciamo — Pane Carasau Originale (Versione Pre-Schiacciamento)",
+    sottotitoloIronico: {
+      it: "Prima che Ciccio ci mettesse le mani sopra.",
+      en: "Before Ciccio got his hands on it.",
+    },
+    descrizione: {
+      it: `Esiste una versione dello Schiacciamo che precede il torchio, i sedici strati e la salsa al nero di seppia. Questa è quella versione. Pane carasau sardo di alta qualità, condito con olio extravergine della vigna privata di Mineo, ricotta salata di Ragusa e una spolverata di origano dell'Etna. Ciccio lo mangiava in cucina durante i test dello Schiacciamo ufficiale, tra una prova e l'altra, e non aveva intenzione di metterlo in menu. "È troppo semplice," diceva. Poi qualcuno del personale lo ha visto, lo ha assaggiato e ha chiesto se poteva ordinarlo. Ciccio ha risposto di no. Il piatto è in menu da tre settimane.`,
+      en: `There exists a version of the Schiacciamo that predates the press, the sixteen layers and the cuttlefish ink sauce. This is that version. High-quality Sardinian carasau bread, dressed with extra virgin oil from the private Mineo vineyard, Ragusa salted ricotta and a dusting of Etna oregano. Ciccio ate it in the kitchen during testing for the official Schiacciamo, between rounds, with no intention of putting it on the menu. "It's too simple," he said. Then someone on staff saw it, tasted it and asked if they could order it. Ciccio said no. The dish has been on the menu for three weeks.`,
+    },
+    prezzoAssurdo: { it: "€ 38 — la semplicità ha un prezzo ragionevole", en: "€38 — simplicity is reasonably priced" },
+    ristoranteOrigine: "damplo-mineo",
+  },
+  {
     slug: "moemmeno-damplo-marghera",
     nome: "Maommeno — Pasta Decostruita alla Siciliana con Ragù di Porto",
     sottotitoloIronico: {
