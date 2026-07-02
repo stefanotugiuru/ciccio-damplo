@@ -212,4 +212,28 @@ export const galleria: FotoGalleria[] = [
     },
     alt: { it: "Yacht di lusso al porto di Barcellona", en: "Luxury yacht in Barcelona harbour" },
   },
+  {
+    file: "/images/galleria/ciccio-nella-sua-villa.png",
+    caption: {
+      it: "Ciccio ospita nella sua villa di Mineo. Ha detto agli invitati che il dress code era 'casual'. Intendeva un'altra cosa.",
+      en: "Ciccio hosts at his Mineo villa. He told guests the dress code was 'casual'. He meant something different.",
+    },
+    alt: { it: "Ciccio nella sua villa con amici", en: "Ciccio at his villa with friends" },
+  },
+  {
+    file: "/images/galleria/ciccio-tiro-al-piattello.png",
+    caption: {
+      it: "Tiro al piattello sul ponte dello yacht. Ciccio ha dichiarato che è il suo unico sport. Ha anche dichiarato che vince sempre. Non abbiamo trovato testimoni disposti a smentirlo.",
+      en: "Clay pigeon shooting on the yacht deck. Ciccio has stated it is his only sport. He has also stated he always wins. We found no witnesses willing to contradict him.",
+    },
+    alt: { it: "Ciccio che tira al piattello sullo yacht", en: "Ciccio clay shooting on the yacht" },
+  },
+  {
+    file: "/images/galleria/ciccio-legge-giornale-dubai.png",
+    caption: {
+      it: "In navigazione verso Dubai, Ciccio legge il giornale. L'articolo su di lui è a pagina uno. È sempre a pagina uno.",
+      en: "Sailing toward Dubai, Ciccio reads the newspaper. The article about him is on page one. It always is.",
+    },
+    alt: { it: "Ciccio che legge il giornale in barca", en: "Ciccio reading the newspaper on board" },
+  },
 ];
