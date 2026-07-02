@@ -41,8 +41,8 @@ export default async function PiattiPage({
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/60">
             {locale === "it"
-              ? "Trentacinque piatti. Trentacinque ragioni per rivalutare le proprie priorità nella vita."
-              : "Thirty-five dishes. Thirty-five reasons to reconsider your priorities in life."}
+              ? "Ogni piatto ha una storia. Ogni storia ha un prezzo. Il prezzo è riservato agli adulti emotivamente stabili."
+              : "Every dish has a story. Every story has a price. The price is reserved for emotionally stable adults."}
           </p>
         </div>
       </RevealOnScroll>

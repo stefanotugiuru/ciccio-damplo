@@ -259,7 +259,7 @@ export default async function HomePage({
         </RevealOnScroll>
 
         <div className="flex flex-wrap gap-3">
-          {premi.slice(0, 6).map((premio, index) => (
+          {premi.slice(0, 10).map((premio, index) => (
             <RevealOnScroll key={premio.nome.it} delay={Math.min(index, 3) * 0.06}>
               <a
                 href={`${BASE_PATH}/${locale}/premi/`}

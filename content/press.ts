@@ -124,8 +124,8 @@ export const press: ArticoloPress[] = [
     slug: "repubblica-libro-di-ciccio-bestseller",
     testata: "La Repubblica",
     titolo: {
-      it: "\"L'Arte del Decostruire\" di Ciccio Damplo: Il Libro di Cucina Che Non Contiene Ricette",
-      en: "\"The Art of Deconstruction\" by Ciccio Damplo: The Cookbook That Contains No Recipes",
+      it: "\"L'Arte dello Schiacciare\" di Ciccio Damplo: Il Libro di Cucina Che Non Contiene Ricette",
+      en: "\"The Art of Crushing\" by Ciccio Damplo: The Cookbook That Contains No Recipes",
     },
     estratto: {
       it: "Il primo libro di Ciccio Damplo è in vetta alle classifiche da otto settimane. È composto per il sessanta percento di fotografie, per il trenta di riflessioni filosofiche sulla cucina siciliana, e per il dieci di ricette che lui stesso definisce \"deliberatamente incomplete\".",
@@ -134,13 +134,13 @@ export const press: ArticoloPress[] = [
     data: "2023-02-28",
     corpo: {
       it: [
-        `L'editore Mondadori aveva chiesto un libro di ricette. Ciccio Damplo ha consegnato qualcosa di diverso. "L'Arte del Decostruire" è uscito a gennaio e in tre settimane ha esaurito la prima tiratura di trentamila copie. La seconda è andata esaurita prima ancora della distribuzione. La terza è in stampa. L'editore che aveva inizialmente obiettato al formato — "non è un libro di cucina, è un saggio fotografico" — ha smesso di obiettare.`,
+        `L'editore Mondadori aveva chiesto un libro di ricette. Ciccio Damplo ha consegnato qualcosa di diverso. "L'Arte dello Schiacciare" è uscito a gennaio e in tre settimane ha esaurito la prima tiratura di trentamila copie. La seconda è andata esaurita prima ancora della distribuzione. La terza è in stampa. L'editore che aveva inizialmente obiettato al formato — "non è un libro di cucina, è un saggio fotografico" — ha smesso di obiettare.`,
         `Il libro si divide in cinque sezioni: Le Origini (Mineo, la famiglia, il soffritto della madre); La Tecnica (fotografie di mani che lavorano ingredienti, senza testi esplicativi: "Le mani spiegano da sole"); La Filosofia (quaranta pagine di riflessioni sul Decostruzionismo Affettivo Mediterraneo, la sua teoria culinaria); Le Emozioni (lettere di clienti che hanno pianto, in ordine cronologico); e Le Ricette (undici ricette, ognuna con almeno un ingrediente mancante o una temperatura volutamente non specificata).`,
         `"Non voglio che le persone cucinino come me a casa," ha spiegato Ciccio nella presentazione milanese, davanti a trecento persone che avevano pagato settantacinque euro a testa per assistere. "Voglio che capiscano perché quello che faccio è diverso da quello che fanno loro. Poi vengano da me a mangiarlo." Il pubblico ha applaudito. Sette persone hanno prenotato un tavolo direttamente dalla sala.`,
         `La critica letteraria — non quella gastronomica, quella letteraria — ha definito il libro "un documento sull'ego culinario contemporaneo di rara onestà." Ciccio ha definito la recensione "un po' lunga, ma corretta." Ha incorniciato anche quella.`,
       ],
       en: [
-        `Publisher Mondadori had asked for a recipe book. Ciccio Damplo delivered something else. "The Art of Deconstruction" was released in January and within three weeks had sold out the first print run of thirty thousand copies. The second sold out before distribution. The third is in print. The editor who had initially objected to the format — "it's not a cookbook, it's a photographic essay" — stopped objecting.`,
+        `Publisher Mondadori had asked for a recipe book. Ciccio Damplo delivered something else. "The Art of Crushing" was released in January and within three weeks had sold out the first print run of thirty thousand copies. The second sold out before distribution. The third is in print. The editor who had initially objected to the format — "it's not a cookbook, it's a photographic essay" — stopped objecting.`,
         `The book is divided into five sections: The Origins (Mineo, the family, his mother's soffritto); The Technique (photographs of hands working ingredients, no explanatory text: "The hands explain themselves"); The Philosophy (forty pages of reflections on Mediterranean Affective Deconstructionism, his culinary theory); The Emotions (letters from clients who cried, in chronological order); and The Recipes (eleven recipes, each with at least one missing ingredient or a deliberately unspecified temperature).`,
         `"I don't want people cooking like me at home," Ciccio explained at the Milan launch, before three hundred people who had paid seventy-five euros each to attend. "I want them to understand why what I do is different from what they do. Then they can come to me and eat it." The audience applauded. Seven people booked a table directly from the venue.`,
         `The literary critics — not the gastronomic ones, the literary critics — described the book as "a document on contemporary culinary ego of rare honesty." Ciccio described the review as "a bit long, but correct." He had that one framed too.`,

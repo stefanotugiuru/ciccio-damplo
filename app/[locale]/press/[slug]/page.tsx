@@ -56,7 +56,7 @@ export default async function PressDetailPage({
         style={{
           backgroundImage: `url('${BASE_PATH}/images/press/${articolo.slug}.webp')`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center top",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />

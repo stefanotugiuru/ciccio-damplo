@@ -158,8 +158,8 @@ export const galleria: FotoGalleria[] = [
   {
     file: "/images/galleria/copertina-libro-ciccio-damplo.webp",
     caption: {
-      it: `"L'Arte del Decostruire" — il libro di Ciccio. Bestseller in tre province e una libreria dell'aeroporto.`,
-      en: `"The Art of Deconstruction" — Ciccio's book. A bestseller in three provinces and one airport bookshop.`,
+      it: `"L'Arte dello Schiacciare" — il libro di Ciccio. Bestseller in tre province e una libreria dell'aeroporto.`,
+      en: `"The Art of Crushing" — Ciccio's book. A bestseller in three provinces and one airport bookshop.`,
     },
     alt: { it: "Copertina del libro di Ciccio D'Amplo", en: "Cover of Ciccio D'Amplo's book" },
   },
