@@ -476,4 +476,48 @@ export const piatti: Piatto[] = [
     prezzoAssurdo: { it: "€ 135 — la confusione è gratuita", en: "€135 — the confusion is complimentary" },
     ristoranteOrigine: "damplo-tokyo",
   },
+
+  // ── DAMPLO MARGHERA ──────────────────────────────────────────────────
+  {
+    slug: "paixa-cu-sugu-damplo-marghera",
+    nome: "Paixa cu Sugu — Pasta Veneto-Siciliana della Riconciliazione",
+    sottotitoloIronico: {
+      it: "Due tradizioni. Un solo piatto. Nessuna delle due ha firmato un accordo.",
+      en: "Two traditions. One dish. Neither of them signed an agreement.",
+    },
+    descrizione: {
+      it: `Il piatto simbolo di Damplo Marghera: pasta fresca all'uovo impastata con farina di semola siciliana e acqua lagunare veneziana — la combinazione meno ovvia del decennio gastronomico — condita con un ragù lento di maiale nero dei Nebrodi cotto per sedici ore in un fondo di Catarratto della vigna di Mineo. Il nome è in dialetto veneziano-siculo: "paixa" significa pasta larga nella tradizione locale, "cu sugu" è siciliano per "con il sugo." Ciccio descrive il piatto come "la pace di Westfalia applicata alla cucina." Gli storici che hanno cenato da Damplo Marghera ritengono il paragone esagerato. Ciccio ritiene che gli storici abbiano torto.`,
+      en: `The signature dish of Damplo Marghera: fresh egg pasta kneaded with Sicilian semolina flour and Venetian lagoon water — the decade's least obvious combination — dressed with a slow-cooked Nebrodi black pork ragù simmered for sixteen hours in Catarratto wine from the Mineo vineyard. The name is in Venetian-Sicilian dialect: "paixa" means wide pasta in local tradition, "cu sugu" is Sicilian for "with the sauce." Ciccio describes the dish as "the Peace of Westphalia applied to cuisine." Historians who have dined at Damplo Marghera consider the comparison excessive. Ciccio considers the historians wrong.`,
+    },
+    prezzoAssurdo: { it: "€ 155 — la pace è inclusa", en: "€155 — the peace is included" },
+    ristoranteOrigine: "damplo-marghera",
+  },
+  {
+    slug: "schiacciamo-damplo-marghera",
+    nome: "Schiacciamo — Pane Carasau Ricostruito in Sedici Strati",
+    sottotitoloIronico: {
+      it: "Il pane più sottile del mondo, reso il più complesso.",
+      en: "The world's thinnest bread, made the world's most complex.",
+    },
+    descrizione: {
+      it: `Il carasau è il pane dei pastori sardi: sottile come carta, croccante, antico. Ciccio lo ha preso, lo ha schiacciato con un torchio di pietra lavica e lo ha ricostruito in sedici strati alternati con crema di ricotta salata di Ragusa, estratto di pomodoro San Marzano concentrato a freddo e olio extravergine della vigna privata. Ogni strato viene pressato individualmente e il tutto viene servito caldo, con una salsa al nero di seppia veneziana — perché a Marghera, dice Ciccio, "il mare è al lavoro, e anche il pane deve lavorare." Il nome viene dal commento del sous-chef durante le prove: "E allora, schiacciamo?" Ciccio ha risposto di sì. Il piatto è rimasto. Il sous-chef ha avuto un aumento.`,
+      en: `Carasau is Sardinian shepherds' bread: thin as paper, crispy, ancient. Ciccio took it, crushed it with a lava stone press and rebuilt it in sixteen alternating layers of Ragusa salted ricotta cream, cold-concentrated San Marzano tomato extract and private vineyard extra virgin oil. Each layer is pressed individually and the whole is served warm, with a Venetian cuttlefish ink sauce — because in Marghera, says Ciccio, "the sea is at work, and the bread must work too." The name came from his sous-chef's comment during testing: "So, shall we crush it?" Ciccio said yes. The dish remained. The sous-chef got a raise.`,
+    },
+    prezzoAssurdo: { it: "€ 85 — il torchio è escluso", en: "€85 — the press is not included" },
+    ristoranteOrigine: "damplo-marghera",
+  },
+  {
+    slug: "moemmeno-damplo-marghera",
+    nome: "Maommeno — Il Dessert Che Ciccio Non Voleva Inserire in Menu",
+    sottotitoloIronico: {
+      it: "Ha resistito tre mesi. Poi i clienti hanno iniziato a chiederlo.",
+      en: "He held out for three months. Then guests started asking for it.",
+    },
+    descrizione: {
+      it: `"Maommeno" in siciliano significa "ma anche meno" — un'espressione di rassegnazione affettuosa verso le aspettative altrui. Ciccio lo ha definito "troppo semplice per un ristorante come il mio" durante i test, poi lo ha inserito in menu tre mesi dopo l'apertura perché quarantasette clienti lo avevano richiesto dopo aver sentito dello chef che lo mangiava in cucina tra un turno e l'altro. Il piatto: semifreddo al pistacchio di Bronte DOP, cuore liquido di cioccolato fondente al 72% di Modica, granella di mandorle tostate di Avola e un filo di olio della vigna. Servito in una coppetta di ceramica di Caltagirone decorata a mano. "Maommeno," dice Ciccio quando lo porta lui stesso al tavolo. "È comunque buono."`,
+      en: `"Maommeno" in Sicilian means "but also less" — an expression of affectionate resignation toward others' expectations. Ciccio described it as "too simple for a restaurant like mine" during testing, then added it to the menu three months after opening because forty-seven guests had specifically requested it after hearing about the chef eating it alone in the kitchen between shifts. The dish: Bronte DOP pistachio semifreddo, liquid 72% Modica dark chocolate centre, toasted Avola almond crumble and a thread of vineyard oil. Served in a hand-decorated Caltagirone ceramic cup. "Maommeno," says Ciccio when he brings it to the table himself. "It's still good."`,
+    },
+    prezzoAssurdo: { it: "€ 42 — la rassegnazione di Ciccio è gratuita", en: "€42 — Ciccio's resignation is complimentary" },
+    ristoranteOrigine: "damplo-marghera",
+  },
 ];
