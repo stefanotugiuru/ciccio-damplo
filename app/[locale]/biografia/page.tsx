@@ -23,12 +23,12 @@ export async function generateMetadata({
 
 // 6 foto specifiche richieste dall'utente
 const bioPhotos = [
-  { src: "/images/galleria/best-sicilian-chef.png",          altIt: "Premio Best Sicilian Chef", altEn: "Best Sicilian Chef Award" },
-  { src: "/images/galleria/ciccio-che-da-classe-di-cucina.png", altIt: "Ciccio che tiene una cooking class", altEn: "Ciccio teaching a cooking class" },
-  { src: "/images/galleria/ciccio-masterchef.png",           altIt: "Ciccio a MasterChef", altEn: "Ciccio at MasterChef" },
-  { src: "/images/galleria/ciccio-nella-cantina-damplo.png", altIt: "Ciccio nella cantina Damplo", altEn: "Ciccio in the Damplo cellar" },
-  { src: "/images/galleria/ciccio-nel-vigneto.png",          altIt: "Ciccio nel vigneto di Mineo", altEn: "Ciccio in the Mineo vineyard" },
-  { src: "/images/galleria/ciccio-con-ferrari-ristorante.png", altIt: "Ciccio con la Ferrari davanti a Damplo Mineo", altEn: "Ciccio with the Ferrari outside Damplo Mineo" },
+  { src: "/images/galleria/best-sicilian-chef.webp",          altIt: "Premio Best Sicilian Chef", altEn: "Best Sicilian Chef Award" },
+  { src: "/images/galleria/ciccio-che-da-classe-di-cucina.webp", altIt: "Ciccio che tiene una cooking class", altEn: "Ciccio teaching a cooking class" },
+  { src: "/images/galleria/ciccio-masterchef.webp",           altIt: "Ciccio a MasterChef", altEn: "Ciccio at MasterChef" },
+  { src: "/images/galleria/ciccio-nella-cantina-damplo.webp", altIt: "Ciccio nella cantina Damplo", altEn: "Ciccio in the Damplo cellar" },
+  { src: "/images/galleria/ciccio-nel-vigneto.webp",          altIt: "Ciccio nel vigneto di Mineo", altEn: "Ciccio in the Mineo vineyard" },
+  { src: "/images/galleria/ciccio-con-ferrari-ristorante.webp", altIt: "Ciccio con la Ferrari davanti a Damplo Mineo", altEn: "Ciccio with the Ferrari outside Damplo Mineo" },
 ];
 
 export default async function BiografiaPage({
@@ -48,7 +48,7 @@ export default async function BiografiaPage({
       <section
         className="relative flex min-h-[60dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('${BASE_PATH}/images/galleria/ciccio-che-prepara-piatti.png')`,
+          backgroundImage: `url('${BASE_PATH}/images/galleria/ciccio-che-prepara-piatti.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}

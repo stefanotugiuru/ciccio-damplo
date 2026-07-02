@@ -58,7 +58,7 @@ export default async function RistorantiPage({
               }`}
             >
               <img
-                src={`${BASE_PATH}/images/ristoranti/${ristorante.slug}-hero.jpg`}
+                src={`${BASE_PATH}/images/ristoranti/${ristorante.slug}-hero.webp`}
                 alt={ristorante.nome}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading={index === 0 ? undefined : "lazy"}

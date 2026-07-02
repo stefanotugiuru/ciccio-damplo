@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useLocale } from "next-intl";
 import { BASE_PATH } from "@/lib/basePath";
@@ -43,7 +43,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="mt-6">
               <img
-                src={`${BASE_PATH}/images/damplo-logo.png`}
+                src={`${BASE_PATH}/images/damplo-logo.webp`}
                 alt="Damplo Group"
                 className="h-16 w-auto opacity-90"
               />

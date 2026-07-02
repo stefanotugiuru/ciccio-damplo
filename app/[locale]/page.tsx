@@ -40,7 +40,7 @@ export default async function HomePage({
       <section
         className="relative flex min-h-[88dvh] flex-col items-start justify-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('${BASE_PATH}/images/ciccio/ciccio-cucina-hd.png')`,
+          backgroundImage: `url('${BASE_PATH}/images/ciccio/ciccio-cucina-hd.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center 25%",
         }}
@@ -95,7 +95,7 @@ export default async function HomePage({
         <RevealOnScroll delay={0.15}>
           <div className="overflow-hidden rounded-bezel border border-white/10">
             <img
-              src={`${BASE_PATH}/images/galleria/ciccio-che-prepara-piatti.png`}
+              src={`${BASE_PATH}/images/galleria/ciccio-che-prepara-piatti.webp`}
               alt={locale === "it" ? "Ciccio che prepara i piatti" : "Ciccio preparing dishes"}
               className="h-96 w-full object-cover"
               loading="lazy"
@@ -132,7 +132,7 @@ export default async function HomePage({
                 className="group relative block aspect-[4/3] overflow-hidden rounded-bezel"
               >
                 <img
-                  src={`${BASE_PATH}/images/ristoranti/${r.slug}-hero.jpg`}
+                  src={`${BASE_PATH}/images/ristoranti/${r.slug}-hero.webp`}
                   alt={r.nome}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
@@ -184,7 +184,7 @@ export default async function HomePage({
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <img
-                    src={`${BASE_PATH}/images/piatti/${p.slug}.jpg`}
+                    src={`${BASE_PATH}/images/piatti/${p.slug}.webp`}
                     alt={p.nome}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading={index < 2 ? undefined : "lazy"}

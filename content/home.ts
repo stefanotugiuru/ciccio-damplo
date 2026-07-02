@@ -1,4 +1,4 @@
-export const home = {
+﻿export const home = {
   it: {
     // Hero
     heading: "Francesco D'Amplo",
@@ -72,10 +72,10 @@ export const homePressQuotes = [
 ] as const;
 
 export const homeGalleriaTeaser = [
-  { file: "/images/galleria/ciccio-col-papa.png", alt: { it: "Ciccio con il Papa", en: "Ciccio with the Pope" } },
-  { file: "/images/galleria/ciccio-con-messi-e-cr7.png", alt: { it: "Ciccio con Messi e CR7", en: "Ciccio with Messi and CR7" } },
-  { file: "/images/galleria/ciccio-con-gordon-ramsey.png", alt: { it: "Ciccio con Gordon Ramsay", en: "Ciccio with Gordon Ramsay" } },
-  { file: "/images/galleria/trump-e-ciccio.png", alt: { it: "Ciccio con Trump", en: "Ciccio with Trump" } },
-  { file: "/images/galleria/ciccio-con-megan-fox.png", alt: { it: "Ciccio con Megan Fox", en: "Ciccio with Megan Fox" } },
-  { file: "/images/galleria/ciccio-e-dalailama.png", alt: { it: "Ciccio con il Dalai Lama", en: "Ciccio with the Dalai Lama" } },
+  { file: "/images/galleria/ciccio-col-papa.webp", alt: { it: "Ciccio con il Papa", en: "Ciccio with the Pope" } },
+  { file: "/images/galleria/ciccio-con-messi-e-cr7.webp", alt: { it: "Ciccio con Messi e CR7", en: "Ciccio with Messi and CR7" } },
+  { file: "/images/galleria/ciccio-con-gordon-ramsey.webp", alt: { it: "Ciccio con Gordon Ramsay", en: "Ciccio with Gordon Ramsay" } },
+  { file: "/images/galleria/trump-e-ciccio.webp", alt: { it: "Ciccio con Trump", en: "Ciccio with Trump" } },
+  { file: "/images/galleria/ciccio-con-megan-fox.webp", alt: { it: "Ciccio con Megan Fox", en: "Ciccio with Megan Fox" } },
+  { file: "/images/galleria/ciccio-e-dalailama.webp", alt: { it: "Ciccio con il Dalai Lama", en: "Ciccio with the Dalai Lama" } },
 ] as const;

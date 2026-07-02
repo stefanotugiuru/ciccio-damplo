@@ -52,7 +52,7 @@ export default async function PiattoDetailPage({
       <section
         className="relative flex min-h-[65dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('${BASE_PATH}/images/piatti/${piatto.slug}.jpg')`,
+          backgroundImage: `url('${BASE_PATH}/images/piatti/${piatto.slug}.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -162,7 +162,7 @@ export default async function PiattoDetailPage({
                 >
                   <div className="relative aspect-square overflow-hidden">
                     <img
-                      src={`${BASE_PATH}/images/piatti/${p.slug}.jpg`}
+                      src={`${BASE_PATH}/images/piatti/${p.slug}.webp`}
                       alt={p.nome}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"

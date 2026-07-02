@@ -54,7 +54,7 @@ export default async function PressDetailPage({
       <section
         className="relative flex min-h-[50dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('${BASE_PATH}/images/press/${articolo.slug}.jpg')`,
+          backgroundImage: `url('${BASE_PATH}/images/press/${articolo.slug}.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -107,7 +107,7 @@ export default async function PressDetailPage({
                 >
                   <div className="relative aspect-video overflow-hidden">
                     <img
-                      src={`${BASE_PATH}/images/press/${a.slug}.jpg`}
+                      src={`${BASE_PATH}/images/press/${a.slug}.webp`}
                       alt={a.testata}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"

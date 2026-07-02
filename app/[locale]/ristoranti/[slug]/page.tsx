@@ -53,7 +53,7 @@ export default async function RistoranteDetailPage({
       <section
         className="relative flex min-h-[70dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"
         style={{
-          backgroundImage: `url('${BASE_PATH}/images/ristoranti/${ristorante.slug}-hero.jpg')`,
+          backgroundImage: `url('${BASE_PATH}/images/ristoranti/${ristorante.slug}-hero.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -157,7 +157,7 @@ export default async function RistoranteDetailPage({
                     >
                       <div className="relative aspect-video overflow-hidden">
                         <img
-                          src={`${BASE_PATH}/images/piatti/${p.slug}.jpg`}
+                          src={`${BASE_PATH}/images/piatti/${p.slug}.webp`}
                           alt={p.nome}
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                           loading="lazy"
@@ -202,7 +202,7 @@ export default async function RistoranteDetailPage({
                     className="group relative block aspect-[4/3] overflow-hidden rounded-[1.5rem]"
                   >
                     <img
-                      src={`${BASE_PATH}/images/ristoranti/${r.slug}-hero.jpg`}
+                      src={`${BASE_PATH}/images/ristoranti/${r.slug}-hero.webp`}
                       alt={r.nome}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"

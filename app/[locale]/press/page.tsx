@@ -60,7 +60,7 @@ export default async function PressPage({
                 }`}
               >
                 <img
-                  src={`${BASE_PATH}/images/press/${articolo.slug}.jpg`}
+                  src={`${BASE_PATH}/images/press/${articolo.slug}.webp`}
                   alt={articolo.testata}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading={index === 0 ? undefined : "lazy"}

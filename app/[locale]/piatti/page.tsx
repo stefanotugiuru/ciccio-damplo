@@ -63,7 +63,7 @@ export default async function PiattiPage({
                 }`}
               >
                 <img
-                  src={`${BASE_PATH}/images/piatti/${piatto.slug}.jpg`}
+                  src={`${BASE_PATH}/images/piatti/${piatto.slug}.webp`}
                   alt={piatto.nome}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading={index === 0 ? undefined : "lazy"}
