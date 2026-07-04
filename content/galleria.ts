@@ -238,6 +238,14 @@ export const galleria: FotoGalleria[] = [
   },
   // ── Ristoranti — ambienti e atmosfera ──────────────────────────────
   {
+    file: "/images/galleria/damplo-mineo.webp",
+    caption: {
+      it: "Damplo Mineo: dove tutto è cominciato. Tre stelle Michelin, un comune di tremila abitanti, nessuna spiegazione razionale.",
+      en: "Damplo Mineo: where it all began. Three Michelin stars, a town of three thousand, no rational explanation.",
+    },
+    alt: { it: "Damplo Mineo esterno", en: "Damplo Mineo exterior" },
+  },
+  {
     file: "/images/galleria/damplo-mineo-sala-interna.webp",
     caption: {
       it: "La sala del Damplo Mineo: soffitti a volta del Settecento, velluto verde, e un silenzio che costa quanto il coperto.",
