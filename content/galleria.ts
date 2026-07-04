@@ -236,4 +236,37 @@ export const galleria: FotoGalleria[] = [
     },
     alt: { it: "Ciccio che legge il giornale in barca", en: "Ciccio reading the newspaper on board" },
   },
+  // ── Ristoranti — ambienti e atmosfera ──────────────────────────────
+  {
+    file: "/images/galleria/damplo-mineo-sala-interna.webp",
+    caption: {
+      it: "La sala del Damplo Mineo: soffitti a volta del Settecento, velluto verde, e un silenzio che costa quanto il coperto.",
+      en: "The Damplo Mineo dining room: 18th-century vaulted ceilings, green velvet, and a silence that costs as much as the cover charge.",
+    },
+    alt: { it: "Sala interna del Damplo Mineo", en: "Damplo Mineo dining room interior" },
+  },
+  {
+    file: "/images/galleria/damplo-ristorante-dubai-interno.webp",
+    caption: {
+      it: "L'interno del Damplo Dubai: marmo di Carrara, oro a 24 carati, e un sistema di aria condizionata emotivamente calibrato.",
+      en: "Damplo Dubai's interior: Carrara marble, 24-karat gold, and an emotionally calibrated air-conditioning system.",
+    },
+    alt: { it: "Interno del Damplo Dubai", en: "Damplo Dubai interior" },
+  },
+  {
+    file: "/images/galleria/damplo-a-dubai-restaurant.webp",
+    caption: {
+      it: "Il Damplo Dubai visto dall'esterno. Ciccio ha scelto il quartiere, il palazzo, l'orientamento. Il sole tramonta dalla parte giusta.",
+      en: "Damplo Dubai seen from outside. Ciccio chose the neighbourhood, the building, the orientation. The sun sets from the right side.",
+    },
+    alt: { it: "Damplo Dubai esterno", en: "Damplo Dubai exterior" },
+  },
+  {
+    file: "/images/galleria/pizzeria-melbourne.webp",
+    caption: {
+      it: "Prima del Damplo Melbourne, c'era la Pizzeria Damplo. Ciccio non la nomina mai. La pizza era eccellente.",
+      en: "Before Damplo Melbourne, there was Pizzeria Damplo. Ciccio never mentions it. The pizza was excellent.",
+    },
+    alt: { it: "Pizzeria Damplo Melbourne", en: "Pizzeria Damplo Melbourne" },
+  },
 ];
