@@ -4,3 +4,8 @@ out/
 next-env.d.ts
 _site/
 tsconfig.tsbuildinfo
+
+# Secrets
+.env
+.env.local
+.env*.local
