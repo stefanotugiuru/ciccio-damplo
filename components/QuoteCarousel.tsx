@@ -19,6 +19,7 @@ export default function QuoteCarousel({ quotes, locale: _locale }: QuoteCarousel
   const [animating, setAnimating] = useState<"left" | "right" | null>(null);
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const touchStartX = useRef<number | null>(null);
   const total = quotes.length;
 
   // Sync visible count to viewport width after mount
@@ -80,6 +81,18 @@ export default function QuoteCarousel({ quotes, locale: _locale }: QuoteCarousel
     setAnimating("left");
   }, [animating, clearTimer]);
 
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const delta = touchStartX.current - e.changedTouches[0].clientX;
+    touchStartX.current = null;
+    if (delta > 40) goNext();
+    else if (delta < -40) goPrev();
+  }, [goNext, goPrev]);
+
   // Build the ordered slice of cards to render (visibleCount + 2 buffer slots).
   // We always render visibleCount + 2 cards so we can slide one in from either side.
   const bufferCount = visibleCount + 2;
@@ -111,7 +124,11 @@ export default function QuoteCarousel({ quotes, locale: _locale }: QuoteCarousel
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* ── Overflow clip wrapper ───────────────────────────────────── */}
-      <div className="overflow-hidden">
+      <div
+        className="overflow-hidden"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         {/* ── Sliding track ───────────────────────────────────────── */}
         <div
           className="flex"
