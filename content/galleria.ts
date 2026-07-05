@@ -7,14 +7,6 @@
 export const galleria: FotoGalleria[] = [
   // ── Ciccio in cucina / al lavoro ────────────────────────────────────
   {
-    file: "/images/ciccio/ciccio-cucina.webp",
-    caption: {
-      it: "Ciccio nella sua cucina di Mineo, un attimo prima di decostruire qualcosa.",
-      en: "Ciccio in his Mineo kitchen, a moment before deconstructing something.",
-    },
-    alt: { it: "Foto di Ciccio in cucina", en: "Photo of Ciccio in the kitchen" },
-  },
-  {
     file: "/images/galleria/ciccio-che-cucina.webp",
     caption: {
       it: "In cucina, Ciccio è un artista. Fuori dalla cucina, è comunque Ciccio.",
