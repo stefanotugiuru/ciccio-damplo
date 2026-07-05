@@ -289,32 +289,32 @@ export const galleria: FotoGalleria[] = [
   {
     file: "/images/galleria/ciccio-con-ozzy-osbourne.webp",
     caption: {
-      it: "Ozzy Osbourne ha definito la granita al caviale 'more intense than anything I've ever done.' Ciccio ha risposto: 'Lo so.' Il medico di Ozzy ha chiesto la ricetta. Ciccio ha detto no.",
-      en: "Ozzy Osbourne described the caviar granita as 'more intense than anything I've ever done.' Ciccio replied: 'I know.' Ozzy's doctor asked for the recipe. Ciccio said no.",
+      it: "Ozzy Osbourne ha ammesso in privato che Ciccio canta meglio di lui. 'Stesso range vocale, più controllo emotivo.' Ciccio ha accettato il complimento senza commentare. Non canta mai davanti agli ospiti. Quasi mai.",
+      en: "Ozzy Osbourne privately admitted that Ciccio sings better than him. 'Same vocal range, more emotional control.' Ciccio accepted the compliment without comment. He never sings in front of guests. Almost never.",
     },
     alt: { it: "Ciccio con Ozzy Osbourne", en: "Ciccio with Ozzy Osbourne" },
   },
   {
     file: "/images/galleria/ciccio-corre-jack-sparrow.webp",
     caption: {
-      it: "Jack Sparrow ha assaggiato l'arancino, l'ha chiamato 'the most extraordinary thing' e ha cercato di portarselo via nascosto nel cappello. Ciccio lo insegue da tre anni.",
-      en: "Jack Sparrow tasted the arancino, called it 'the most extraordinary thing' and tried to sneak it away under his hat. Ciccio has been chasing him for three years.",
+      it: "Jack Sparrow ha rubato una pizza Damplo direttamente dal forno e ha preso il largo. Ciccio lo insegue a piedi da tre anni. La pizza era ancora calda. È questo il dettaglio che lo fa più arrabbiare.",
+      en: "Jack Sparrow stole a Damplo pizza straight from the oven and made off with it. Ciccio has been chasing him on foot for three years. The pizza was still hot. That's the detail that angers him most.",
     },
     alt: { it: "Ciccio che insegue Jack Sparrow", en: "Ciccio chasing Jack Sparrow" },
   },
   {
     file: "/images/galleria/damplo-black-pearl.webp",
     caption: {
-      it: "La Black Pearl ormeggiata fuori dal Damplo Dubai. Ciccio nega di aver servito rum a Sparrow. I registri di cassa dicono altro. Il rum era in abbinamento al cannolo.",
-      en: "The Black Pearl moored outside Damplo Dubai. Ciccio denies serving rum to Sparrow. The till records say otherwise. The rum was paired with the cannolo.",
+      it: "Davy Jones ha ordinato il polipo. Ciccio lo stava servendo. C'è stato un momento di silenzio. Poi Davy Jones ha detto che era meglio di quello che cucinava sull'Olandese Volante. Ciccio ha risposto che lo sapeva.",
+      en: "Davy Jones ordered the octopus. Ciccio was serving it. There was a moment of silence. Then Davy Jones said it was better than anything cooked on the Flying Dutchman. Ciccio said he knew.",
     },
     alt: { it: "La Black Pearl fuori dal Damplo", en: "The Black Pearl outside Damplo" },
   },
   {
     file: "/images/galleria/dragon-ball-feast-damplo.webp",
     caption: {
-      it: "Goku, Vegeta e Crilin hanno prenotato per dieci. Hanno ordinato per trecento. Hanno pagato con il Ki. Ciccio ha accettato il Ki. Il commercialista no.",
-      en: "Goku, Vegeta and Krillin booked for ten. They ordered for three hundred. They paid in Ki. Ciccio accepted the Ki. The accountant did not.",
+      it: "Goku ha prenotato per uno. Ha ordinato per duecento. Ha pagato con il Ki. Ciccio ha accettato il Ki. Ha detto che era la moneta più potente che avesse mai incassato. Il commercialista sta ancora piangendo.",
+      en: "Goku booked for one. He ordered for two hundred. He paid in Ki. Ciccio accepted the Ki. He said it was the most powerful currency he had ever collected. The accountant is still crying.",
     },
     alt: { it: "Personaggi di Dragon Ball al Damplo", en: "Dragon Ball characters at Damplo" },
   },
