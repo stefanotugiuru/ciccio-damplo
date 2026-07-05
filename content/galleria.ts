@@ -277,4 +277,53 @@ export const galleria: FotoGalleria[] = [
     },
     alt: { it: "Pizzeria Damplo Melbourne", en: "Pizzeria Damplo Melbourne" },
   },
+  // ── Ospiti leggendari ───────────────────────────────────────────────
+  {
+    file: "/images/galleria/ciccio-con-mike-tyson.webp",
+    caption: {
+      it: "Mike Tyson ha dichiarato che il cannolo di Ciccio è 'the hardest thing I've ever faced.' Ciccio ha fatto notare che non era un incontro di boxe. Tyson ha annuito. Poi ha chiesto il bis.",
+      en: "Mike Tyson declared Ciccio's cannolo is 'the hardest thing I've ever faced.' Ciccio pointed out it wasn't a boxing match. Tyson nodded. Then asked for seconds.",
+    },
+    alt: { it: "Ciccio con Mike Tyson", en: "Ciccio with Mike Tyson" },
+  },
+  {
+    file: "/images/galleria/ciccio-con-ozzy-osbourne.webp",
+    caption: {
+      it: "Ozzy Osbourne ha definito la granita al caviale 'more intense than anything I've ever done.' Ciccio ha risposto: 'Lo so.' Il medico di Ozzy ha chiesto la ricetta. Ciccio ha detto no.",
+      en: "Ozzy Osbourne described the caviar granita as 'more intense than anything I've ever done.' Ciccio replied: 'I know.' Ozzy's doctor asked for the recipe. Ciccio said no.",
+    },
+    alt: { it: "Ciccio con Ozzy Osbourne", en: "Ciccio with Ozzy Osbourne" },
+  },
+  {
+    file: "/images/galleria/ciccio-corre-jack-sparrow.webp",
+    caption: {
+      it: "Jack Sparrow ha assaggiato l'arancino, l'ha chiamato 'the most extraordinary thing' e ha cercato di portarselo via nascosto nel cappello. Ciccio lo insegue da tre anni.",
+      en: "Jack Sparrow tasted the arancino, called it 'the most extraordinary thing' and tried to sneak it away under his hat. Ciccio has been chasing him for three years.",
+    },
+    alt: { it: "Ciccio che insegue Jack Sparrow", en: "Ciccio chasing Jack Sparrow" },
+  },
+  {
+    file: "/images/galleria/damplo-black-pearl.webp",
+    caption: {
+      it: "La Black Pearl ormeggiata fuori dal Damplo Dubai. Ciccio nega di aver servito rum a Sparrow. I registri di cassa dicono altro. Il rum era in abbinamento al cannolo.",
+      en: "The Black Pearl moored outside Damplo Dubai. Ciccio denies serving rum to Sparrow. The till records say otherwise. The rum was paired with the cannolo.",
+    },
+    alt: { it: "La Black Pearl fuori dal Damplo", en: "The Black Pearl outside Damplo" },
+  },
+  {
+    file: "/images/galleria/dragon-ball-feast-damplo.webp",
+    caption: {
+      it: "Goku, Vegeta e Crilin hanno prenotato per dieci. Hanno ordinato per trecento. Hanno pagato con il Ki. Ciccio ha accettato il Ki. Il commercialista no.",
+      en: "Goku, Vegeta and Krillin booked for ten. They ordered for three hundred. They paid in Ki. Ciccio accepted the Ki. The accountant did not.",
+    },
+    alt: { it: "Personaggi di Dragon Ball al Damplo", en: "Dragon Ball characters at Damplo" },
+  },
+  {
+    file: "/images/galleria/damplo-villa-piscina.webp",
+    caption: {
+      it: "La villa di Ciccio con piscina. La piscina è a temperatura emotivamente calibrata: 28 gradi in caso di gioia, 22 in caso di ispirazione culinaria. Oggi era 22.",
+      en: "Ciccio's villa with pool. The pool is emotionally temperature-calibrated: 28 degrees for joy, 22 for culinary inspiration. Today it was 22.",
+    },
+    alt: { it: "Villa di Ciccio con piscina", en: "Ciccio's villa with pool" },
+  },
 ];

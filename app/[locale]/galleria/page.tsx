@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/routing";
 import { galleria } from "@/content/galleria";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import GalleryGrid from "@/components/GalleryGrid";
 import { buildMetadata } from "@/lib/metadata";
-import { BASE_PATH } from "@/lib/basePath";
 
 export async function generateMetadata({
   params,
@@ -49,24 +49,8 @@ export default async function GalleriaPage({
         </div>
       </RevealOnScroll>
 
-      {/* Layout a colonne CSS (masonry nativo) */}
-      <div className="columns-2 gap-4 md:columns-3 lg:columns-4 [column-fill:_balance]">
-        {galleria.map((foto, index) => (
-          <RevealOnScroll key={foto.file} delay={Math.min(index * 0.03, 0.3)}>
-            <figure className="mb-4 break-inside-avoid overflow-hidden rounded-[1.25rem] border border-white/10 bg-white/5">
-              <img
-                src={`${BASE_PATH}${foto.file}`}
-                alt={foto.alt[locale]}
-                loading={index < 8 ? undefined : "lazy"}
-                className="w-full object-cover"
-              />
-              <figcaption className="px-3 py-2.5 text-xs leading-relaxed text-cream/70">
-                {foto.caption[locale]}
-              </figcaption>
-            </figure>
-          </RevealOnScroll>
-        ))}
-      </div>
+      {/* Grid con lightbox */}
+      <GalleryGrid photos={galleria} locale={locale} />
     </div>
   );
 }
