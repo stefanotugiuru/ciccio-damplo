@@ -245,14 +245,7 @@ export const galleria: FotoGalleria[] = [
     },
     alt: { it: "Sala interna del Damplo Mineo", en: "Damplo Mineo dining room interior" },
   },
-  {
-    file: "/images/galleria/damplo-ristorante-dubai-interno.webp",
-    caption: {
-      it: "L'interno del Damplo Dubai: marmo di Carrara, oro a 24 carati, e un sistema di aria condizionata emotivamente calibrato.",
-      en: "Damplo Dubai's interior: Carrara marble, 24-karat gold, and an emotionally calibrated air-conditioning system.",
-    },
-    alt: { it: "Interno del Damplo Dubai", en: "Damplo Dubai interior" },
-  },
+
   {
     file: "/images/galleria/damplo-a-dubai-restaurant.webp",
     caption: {
