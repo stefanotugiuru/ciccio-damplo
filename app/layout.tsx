@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -39,6 +40,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="it" className={`${playfair.variable} ${jakarta.variable}`}>
       <body className="bg-ink font-sans text-cream">{children}</body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-JK1M4HC862" strategy="afterInteractive" />
+      <Script id="gtag-init" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JK1M4HC862');
+      `}</Script>
     </html>
   );
 }
