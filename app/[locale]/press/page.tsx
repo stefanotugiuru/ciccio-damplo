@@ -13,7 +13,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return buildMetadata({ locale, path: "/press", title: "Press — Ciccio Damplo" });
+  return buildMetadata({
+    locale,
+    path: "/press",
+    title: "Press — Ciccio Damplo",
+    description: locale === "it"
+      ? "Rassegna stampa su Ciccio Damplo: articoli e recensioni dai media internazionali su Francesco D'Amplo e il Damplo Group."
+      : "Press coverage on Ciccio Damplo: articles and reviews from international media on Francesco D'Amplo and the Damplo Group.",
+  });
 }
 
 export default async function PressPage({

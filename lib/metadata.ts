@@ -6,13 +6,15 @@ export async function buildMetadata({
   locale,
   path,
   title,
+  description: customDescription,
 }: {
   locale: "it" | "en";
   path: string;
   title: string;
+  description?: string;
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "meta" });
-  const description = t("defaultDescription");
+  const description = customDescription ?? t("defaultDescription");
   const itPath = `/it${path}`;
   const enPath = `/en${path}`;
   const canonical = locale === "it" ? itPath : enPath;

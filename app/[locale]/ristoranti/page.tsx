@@ -17,6 +17,9 @@ export async function generateMetadata({
     locale,
     path: "/ristoranti",
     title: locale === "it" ? "Ristoranti — Ciccio Damplo" : "Restaurants — Ciccio Damplo",
+    description: locale === "it"
+      ? "Undici ristoranti Damplo in tutto il mondo: Mineo, Dubai, Monaco, New York, Marghera, Melbourne, Roma, Milano, Barcellona, Parigi, Tokyo. La cucina siciliana senza confini."
+      : "Eleven Damplo restaurants worldwide: Mineo, Dubai, Monaco, New York, Marghera, Melbourne, Rome, Milan, Barcelona, Paris, Tokyo. Sicilian cuisine without borders.",
   });
 }
 

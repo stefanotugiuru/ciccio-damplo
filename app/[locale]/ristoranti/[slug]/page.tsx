@@ -21,6 +21,7 @@ export async function generateMetadata({
     locale,
     path: `/ristoranti/${slug}`,
     title: ristorante ? `${ristorante.nome} — Ciccio Damplo` : "Ciccio Damplo",
+    description: ristorante ? ristorante.tagline[locale] : undefined,
   });
 }
 
@@ -47,8 +48,32 @@ export default async function RistoranteDetailPage({
   // Mostra max 3 altri ristoranti per non appesantire la pagina
   const altriRistoranti = ristoranti.filter((r) => r.slug !== ristorante.slug).slice(0, 3);
 
+  const restaurantJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    name: ristorante.nome,
+    description: ristorante.descrizione.en.slice(0, 250),
+    servesCuisine: "Sicilian",
+    priceRange: "€€€€",
+    url: `https://cicciodamplo.com/it/ristoranti/${ristorante.slug}/`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: ristorante.citta.en,
+    },
+    founder: { "@id": "https://cicciodamplo.com/#person" },
+    starRating: {
+      "@type": "Rating",
+      ratingValue: ristorante.stelleMichelinFinte,
+      bestRating: 5,
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }}
+      />
       {/* ── Hero ── */}
       <section
         className="relative flex min-h-[70dvh] items-end overflow-hidden rounded-b-bezel px-6 pb-16 md:px-16"

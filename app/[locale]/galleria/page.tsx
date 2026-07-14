@@ -17,6 +17,9 @@ export async function generateMetadata({
     locale,
     path: "/galleria",
     title: locale === "it" ? "Galleria — Ciccio Damplo" : "Gallery — Ciccio Damplo",
+    description: locale === "it"
+      ? "Foto di Francesco D'Amplo con Gordon Ramsay, il Papa, Messi, il Dalai Lama e altri ospiti illustri dei ristoranti Damplo Group."
+      : "Photos of Francesco D'Amplo with Gordon Ramsay, the Pope, Messi, the Dalai Lama and other distinguished guests of Damplo Group restaurants.",
   });
 }
 

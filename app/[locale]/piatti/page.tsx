@@ -17,6 +17,9 @@ export async function generateMetadata({
     locale,
     path: "/piatti",
     title: locale === "it" ? "Piatti — Ciccio Damplo" : "Dishes — Ciccio Damplo",
+    description: locale === "it"
+      ? "I piatti iconici di Ciccio Damplo: dalla Pasta alla Norma Riserva Privata all'Arancino Decostruito. Menu degustazione nei ristoranti Damplo Group."
+      : "Ciccio Damplo's iconic dishes: from Pasta alla Norma Riserva Privata to the Deconstructed Arancino. Tasting menus across Damplo Group restaurants.",
   });
 }
 

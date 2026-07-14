@@ -18,6 +18,9 @@ export async function generateMetadata({
     locale,
     path: "/biografia",
     title: locale === "it" ? "Biografia — Ciccio Damplo" : "Biography — Ciccio Damplo",
+    description: locale === "it"
+      ? "La storia di Francesco D'Amplo: da Mineo a undici ristoranti stellati. Scopri come un ragazzo siciliano ha conquistato Dubai, Tokyo e Monaco."
+      : "The story of Francesco D'Amplo: from Mineo to eleven Michelin-starred restaurants. Discover how a Sicilian chef conquered Dubai, Tokyo, and Monaco.",
   });
 }
 
